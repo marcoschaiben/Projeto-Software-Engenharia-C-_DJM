@@ -801,7 +801,7 @@ RF-05
 \begin_inset Text
 
 \begin_layout Plain Layout
-O usuário deve ter tal liberdade para escolher os modelos disponíveis para
+O usuário deve ter tal liberdade para escolher os modelos disponiveis para
  cálculo;
 \end_layout
 
@@ -1171,14 +1171,18 @@ noprefix "false"
  características do reservatório e previsão do desempenho durante um processo
  de injeção.
  Neste caso de uso geral, o usuário insere os dados de entrada .xlsx, define
- o esquema de injeção, calcula o do fluxo fracionário, calcula as característica
-s de um reservatório homogêneo, calcula o desempenho no processo de recuperação
- secundária e plotará gráficos de comportamento de pressão, de mobilidade,
- perfís de velocidade, perfis de fluxo fracionário, perfis de saturação,
- volume de óleo produzido em função do tempo e gera dados de saída .txt com
- dados de presão, área invadida, posição da frente de avanço da água injetada,
- vazões de injeção e produção, volume de óleo produzido e tempo de produção.
+ o esquema de injeção, calcula as características de um reservatório homogêneo,
+ calcula o desempenho no processo de recuperação secundária e plotará gráficos
+ de comportamento de pressão, de mobilidade, perfís de velocidade, perfis
+ de fluxo fracionário , perfis de saturação, volume de óleo produzido em
+ função do tempo e gera dados de saída .txt com dados de presão, área invadida,
+ posição da frente de avanço da água injetada, vazões de injeção e produção,
+ volume de óleo produzido e tempo de produção.
  O usuário pode então fazer a análise dos resultados obtidos.
+\end_layout
+
+\begin_layout Standard
+Calculo do fluxo fracionário
 \end_layout
 
 \begin_layout Standard

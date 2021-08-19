@@ -873,8 +873,7 @@ DESENVOLVIMENTO DO SOFTWARE
 \begin_inset Newline newline
 \end_inset
 
-OSOSSSS MODELOS DE DESLOCAMENTO IMISCÍVEL PARA RECUPERAÇÃO SECUNDÁRIA DE
- PETRÓLEO
+XXX
 \begin_inset Newline newline
 \end_inset
 
@@ -892,25 +891,19 @@ TRABALHO DA DISCIPLINA PROGRAMAÇÃO PRÁTICA
 \align center
 
 \size large
-DAVID HENRIQUE LIMA DIAS
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size large
-JULIA RANGEL RIBEIRO
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size large
-MARCOS VINÍCIUS DE PAULA CHAIBEN
+Versão 1:
 \begin_inset Newline newline
 \end_inset
 
-- Versão 1:
+AUTORES
+\begin_inset Newline newline
+\end_inset
+
+Versão 2:
+\begin_inset Newline newline
+\end_inset
+
+AUTORES
 \begin_inset Newline newline
 \end_inset
 
@@ -943,7 +936,7 @@ MACAÉ - RJ
 \begin_inset Newline newline
 \end_inset
 
-DEZEMBRO - 2021
+Janeiro - 2015
 \end_layout
 
 \begin_layout Standard
@@ -1147,28 +1140,7 @@ Cálculo da área invadida pela injeção;
 \end_layout
 
 \begin_layout Itemize
-Comportamento das pressões;
-\end_layout
-
-\begin_layout Itemize
-Modelo de Dykstra-Parsosn (1950) e Stiles (1949);
-\end_layout
-
-\begin_layout Itemize
-Cálculo da frente de avanço da camada em cada breakthrough (BT);
-\end_layout
-
-\begin_layout Itemize
-Cálculo da eficiência vertical em cada BT; 
-\end_layout
-
-\begin_layout Itemize
-Cálculo do volume de óleo recuperado total; 
-\end_layout
-
-\begin_layout Itemize
-Cálculo do tempo necessário do BT na última camada (todo óleo recuperável
- possível por esse método de injeção); 
+Comportamento das pressões
 \end_layout
 
 \end_deeper
