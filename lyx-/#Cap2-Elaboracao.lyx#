@@ -129,7 +129,7 @@ space - Elaboração}
 \begin_layout Chapter
 Elaboração
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Elaboração
@@ -159,6 +159,15 @@ Depois da denição dos objetivos, da especicação do software e da montagem
 
 \begin_layout Section
 Análise de domínio
+\end_layout
+
+\begin_layout Standard
+Coelho (1991) afirmou que no processo de exploração e produção de uma reserva
+ de hidrocarbonetos, suas características petrofísicas, geológicas, geofísicas
+ e geoquímicas são fundamentais de entendimento para a eficiente recuperação.
+ A qualidade de um reservatório esta diretamente ligado ao ambiente deposicional
+ do mesmo, bem como aos processos diagenéticos que lhe deram origem.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -263,6 +272,30 @@ breakthrough
 \end_layout
 
 \begin_layout Standard
+Quando se trata de um reservatório heterogêneo as taxas energéticas de sedimenta
+ção influenciam diretamente na seleção dos grãos.
+ Em geral, ambientes de deposição com alta energia, geram reservatórios
+ com boas características permoporosas, visto que os grãos foram melhor
+ retrabalhados ao longo do curso até a compactação.
+ Um exemplo interessante são os reservatórios originados em paleo-deltas,
+ que são portadores da maior parte do óleo existente em reservatórios areníticos
+ no planeta, (COELHO, 1991).
+ Contudo, a taxa pode variar num mesmo ambiente, gerando reservatórios com
+ variações verticais de permeabilidade, ou reservatórios heterogêneos, que
+ ainda podem se dividir em dois grupos, aqueles que possuem camadas sem
+ cruzamento de fluxo.
+\end_layout
+
+\begin_layout Standard
+A heterogeneidade do reservatório provavelmente tem mais influência do que
+ qualquer outro fator no desempenho de uma injeção de fluido, ao passo que
+ se torna a variável mais difícil de determinar (SMITH, COBB, 1997).
+ É necessário entender como as variações de permeabilidade vertical e areal
+ podem ser determinadas, a fim de obter uma melhor previsão de desempenho
+ de eficiência do método de recuperação por injeção
+\end_layout
+
+\begin_layout Standard
 Neste trabalho serão discutidos conceitos de razão mobilidade, condutividade,
  esquemas de injeções em malhas, linhas de fluxo e de pressão, a área invadida
  pela água, bem como a eficiência do varrido horizontal em reservatórios
@@ -270,7 +303,7 @@ Neste trabalho serão discutidos conceitos de razão mobilidade, condutividade,
 \end_layout
 
 \begin_layout Section
-Conhecimentos Teóricos
+Conceitos Teóricos
 \end_layout
 
 \begin_layout Standard
@@ -758,41 +791,182 @@ noprefix "false"
  do reservatório) (COBB; SMITH, 1997).
 \end_layout
 
-\begin_layout Section
-O que é identificação de pacotes
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Identificação de pacotes
+\begin_layout Subsection
+Conceitos Teóricos: 
 \end_layout
+
+\begin_layout Itemize
+
+\series bold
+Eficiência do Varrido Vertical (
+\begin_inset Formula $Ev$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+Definida pela razão entre o volume invadido pela água e o volume total da
+ malha: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Ev=\frac{Volume.invadido.pela.água}{Volume.total.da.malha}\label{eq:EVV}
+\end{equation}
 
 \end_inset
 
- – assuntos
+
+\end_layout
+
+\begin_layout Standard
+Como a própria definição mostrou, quantifica o volume invadido pela água
+ injetada no reservatório, sendo significativamente afetada pela estratificação
+ devido ao movimento preferencial de fluidos nas zonas mais permeáveis.
+ Sofre ainda influência de outros parâmetros como razão de mobilidade, fluxo
+ entre camadas, força da gravidade e forças capilares.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Eficiência do Varrido Horizontal (
+\begin_inset Formula $Ev$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+Em qualquer projeto, independentemente do esquema escolhido, existe uma
+ área total definida que está sujeita à influência da injeção.
+ Por exemplo, em um esquema “five-spot” essa área total é a área da malha
+ base, ou seja, um quadrado.
+ Já no modelo “seven-spot” essa área é um hexágono.
+ Em um reservatório como o da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Injeção-Periférica"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ a área total pode ser vista em planta, delimitada pelo contato óleo/água.
+ Observe que esta área é sempre medida em planta (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+Se não existissem fatores que interferem no desempenho do processo e se
+ o tempo de atuação fosse infinito, a área da malha ou do reservatório seria
+ integralmente varrida pelo fluido injetado, e a recuperação de petróleo
+ seria proveniente de toda essa área.
+ Em projetos reais, devem ser efetuados cálculos para estimar que percentuais
+ dessa área total foram invadidos em diferentes tempos e diferentes condições,
+ uma vez que o fluido injetado invade apenas uma parte da área total (ROSA
+ ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+Define-se eficiência de varrido horizontal, 
+\begin_inset Formula $E_{A}$
+\end_inset
+
+, como a relação entre a área invadida pelo fluido injetado e a área total
+ do meio poroso, ambas medidas em planta.
+ Assim:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{A}=A_{inv}/A_{t}\label{eq:Ea}
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $A_{inv}$
+\end_inset
+
+ é a área invadida pelo fluido e 
+\begin_inset Formula $A_{t}$
+\end_inset
+
+ a área total.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Campo potencial e linhas de fluxo
+\end_layout
+
+\begin_layout Standard
+Para cada distribuição de poços de injeção e de produção que se implanta
+ em um reservatório, e a cada instante, existe um campo potencial que é
+ resultado não só das posições desses poços como também das suas vazões
+ e pressões.
+ Para uma formação horizontal e de pequena espessura, o potencial pode ser
+ substituído pela pressão (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+Os pontos de maior potencial são os poços de injeção e os de menor potencial
+ são os poços de produção, e entre esses pontos existem valores intermediários
+ espalhados por todo o reservatório.
+ Esse campo potencial pode ser representado em planta por meio de linhas
+ equipotenciais.
+ No caso de um único poço situado no centro de um reservatório cilíndrico,
+ por exemplo, as linhas equipotenciais são circunferências que têm o poço
+ como centro como mostrado a Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Linhas-potenciais-situadas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../../../Desktop/UENF/8º Periodo/Hidrodinânica/Trabalho AARE HIdro/lyx/08-resultados-documentofinal-ic-msc-dsc/fig23.png
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Linhas equipotenciais concêntricas em um reservatório infinito.
+ 
 \begin_inset CommandInset label
 LatexCommand label
-name "subsec:Identificação-de-pacotes"
+name "fig:Linhas-potenciais-situadas"
 
 \end_inset
 
 
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Assuntos
 \end_layout
 
 \end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Esta parte deve ser apagada na versão final; serve apenas como lembrete
- dos itens que vocês precisam considerar
 \end_layout
 
 \end_inset
@@ -801,28 +975,1073 @@ Esta parte deve ser apagada na versão final; serve apenas como lembrete
 \end_layout
 
 \begin_layout Standard
-Um assunto é aquilo que é tratado ou abordado em uma discussão, em um estudo
- e é utilizado para orientar o leitor em um modelo amplo e complexo.
+Perpendiculares às linhas equipotenciais se localizam as linhas de fluxo,
+ que começam nos poços de injeção e se estendem até os poços de produção.
+ Como o próprio nome já indica, o fluxo ocorre ao longo dessas linhas.
+ Se o sistema está em regime permanente, tanto o campo potencial como a
+ localização das linhas de fluxo não se alteram com o tempo.
+\end_layout
+
+\begin_layout Standard
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Linhas-de-Fluxo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ apresenta uma malha de injeção em linha direta com algumas das suas linhas
+ de fluxo.
+ Nas vizinhanças dos poços as equipotenciais são circunferências concêntricas
+ aos mesmos.
+ Como as linhas de fluxo são perpendiculares às equipotenciais, nessas regiões
+ o fluxo é radial (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../../../Desktop/UENF/8º Periodo/Hidrodinânica/Trabalho AARE HIdro/lyx/08-resultados-documentofinal-ic-msc-dsc/fig16.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Linhas de Fluxo (ROSA ET AL., 2006).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Linhas-de-Fluxo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como pode ser observado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Linhas-de-Fluxo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, as linhas de fluxo entre dois poços têm comprimentos diferentes.
+ Como a diferença de pressão entre o poço de injeção e o de produção é a
+ mesma ao longo de qualquer linha, cada uma tem um gradiente médio de pressão
+ diferente.
+ As linhas de menor comprimento são as de maior gradiente médio (ROSA ET
+ AL., 2006).
+\end_layout
+
+\begin_layout Standard
+Ao penetrarem no meio poroso, as partículas de fluido que se deslocarem
+ ao longo da linha de fluxo mais curta terão maior velocidade que as partículas
+ que percorrerem outras linhas quaisquer.
+ Isso quer dizer que em um determinado instante cada linha de fluxo terá
+ sido varrida de uma maneira diferente das outras.
+ Deve ser observado que a velocidade varia não só de uma linha para outra
+ como ao longo da própria linha.
+ A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Evolução-da-área"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra como o fluido injetado penetra no meio poroso e a forma que a região
+ invadida vai tomando em função das diferenças de gradiente médio de pressão
+ entre as linhas de fluxo (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../../../Desktop/UENF/8º Periodo/Hidrodinânica/Trabalho AARE HIdro/lyx/08-resultados-documentofinal-ic-msc-dsc/fig17.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Evolução da área invadida em uma malha em linha direta (ROSA ET AL., 2006).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Evolução-da-área"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Inicialmente o fluido injetado se propaga radialmente porque nas proximidades
+ do poço de injeção o gradiente de pressão em todas as linhas é praticamente
+ o mesmo.
+ Quando vista em planta, a área invadida pelo fluido tem uma forma também
+ praticamente circular.
+ À medida que o fluido avança em cada linha, como o seu gradiente de pressão
+ vai se alterando, a sua velocidade também vai se alterando, de tal maneira
+ que a região invadida, que inicialmente era circular, vai adquirindo outra
+ forma.
+ No instante em que a primeira partícula do fluido injetado alcança o poço
+ de produção, teoricamente só a linha de fluxo mais curta foi inteiramente
+ varrida, restando partes do reservatório que ainda não foram contatadas.
+ A região invadida pelo fluido injetado vai se alterando não só em forma
+ como também em dimensão, à medida que mais e mais fluido vai penetrando
+ no meio poroso (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+Conforme será discutido na próxima seção, usando as expressões analíticas
+ que descrevem o comportamento da pressão em reservatórios homogêneos infinitos
+ é possível estimar a área de varrido, bem como a distribuição de pressão
+ e o comportamento das linhas de fluxo, em reservatórios submetidos à injeção
+ de água (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+A dimensão da área invadida e, consequentemente, a eficiência de varrido
+ horizontal dependem da geometria de injeção, do volume de fluido injetado
+ e da razão entre a mobilidade do fluido injetado e a mobilidade do fluido
+ deslocado.
+ Para se entender um pouco mais sobre a formação dessas áreas invadidas
+ é necessário um pequeno estudo a respeito de campos potenciais e linhas
+ de fluxo, que será mostrado a seguir (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Section
+Formulações 
+\end_layout
+
+\begin_layout Subsection
+TITULO JULIA: 
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+Título: DAVID
+\end_layout
+
+\begin_layout Standard
+Dada uma perspectiva particular de injeção num reservatório heterogêneo,
+ pretende-se prever informações como o tempo necessário para o “breakthrough”,
+ recuperação de óleo no “breakthrough”, tempo de produção, desempenho de
+ produção de óleo com a injeção de água, etc.
+ Vários métodos foram propostos para fazer isso, cada um diferindo na maneira
+ de lidar com a heterogeneidade, cálculos de varredura, desempenho de injeção
+ de água, eficiência do deslocamento e muitas outras variáveis que podem
+ afetar a desempenho de injeção (SMITH; COBB, 1997).
+ Como dito na especificação, será analisada a previsão de desempenho num
+ reservatório com múltiplas camadas, com base nos métodos de Stiles (1949)
+ e Dykstra-Parsons(1950), as formulações para tal são definidas a seguir:
+ 
+\end_layout
+
+\begin_layout Standard
+Considerando o Método de Stiles, temos que:
 \end_layout
 
 \begin_layout Itemize
-Se um grupo de classes troca muitas informações entre si, provavelmente
- as classes fazem parte de um mesmo assunto.
- Assim, classes que se relacionam por meio de conceitos em comum fazem parte
- de uma mesma área, são reunidas e formam um assunto (pacote).
+Posição da frante de avanço da água numa cada i qualquer (i > j):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X_{i}=X_{j}\left(\frac{k_{i}}{k_{j}}\right)
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Em um pacote, os nomes de classes e de associações devem ser semelhantes.
+Vazão de injeção numa camada j:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q_{j}=q_{w}=q_{o}=\frac{k_{w}A_{j}\triangle p}{\mu_{w}L}=\frac{k_{o}A_{j}\triangle p}{\mu_{o}L}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Volume de óleo produzido por camada em condições padrão: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N_{pi}=\frac{V_{pi}(1-S_{w}-S_{or})}{Bo}=\frac{WX_{i}h_{i}\phi(1-S_{w}-S_{or})}{Bo}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Volume de óleo produzido em toda a malha em condições padrão:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N_{p}=\frac{V_{p}(1-S_{w}-S_{or})}{Bo}E_{v}=\frac{WLh_{t}\phi(1-S_{w}-S_{or})}{Bo}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Considerando o Método de Dykstra-Parsons, temos que:
+\end_layout
+
+\begin_layout Itemize
+Posição da frante de avanço da água numa cada i qualquer (i > j):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X_{i}=L\left[\frac{M-\sqrt{M^{2}+(1-M^{2})\frac{k_{i}}{k_{j}}}}{M-1}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A eficiência do varrido vertical é definida matematicamente como: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{v}=\frac{\stackrel[i=l]{n}{\sum}X_{i}h_{i}}{Lh_{t}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A vazão de injeção em cada camada como sendo dependente da razão de mobilidade
+ M e posição X:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(Q_{inj})_{i}=\frac{k_{i}k_{rw}A\triangle p}{B_{w}\mu_{w}[X_{i}+M(L-X_{i})]}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Volume de óleo produzido por camada em condições padrão: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N_{pi}=\frac{V_{pi}(1-S_{w}-S_{or})}{Bo}=\frac{WX_{i}h_{i}\phi(1-S_{w}-S_{or})}{Bo}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Volume de óleo produzido em toda a malha em condições padrão:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N_{p}=\frac{V_{p}(1-S_{w}-S_{or})}{Bo}E_{v}=\frac{WLh_{t}\phi(1-S_{w}-S_{or})}{Bo}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\series bold
+TITULO: MARCOS
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Método aproximado de Deppe para análise da injetividade relativa contra
+ o avanço da frente de injeção: 
+\end_layout
+
+\begin_layout Standard
+Em um projeto de injeção de água é necessário o conhecimento dos valores,
+ pelo menos aproximados, das vazões e das pressões de injeção.
+ Valores muito altos de pressões de injeção podem acarretar fraturas na
+ formação e prejudicar seriamente o deslocamento do óleo pela água.
+ Por outro lado, é necessária uma boa injetividade para se obter uma boa
+ produtividade.
+ Os valores de vazão e de pressão de injeção são necessários também para
+ o dimensionamento dos equipamentos de superfície a serem utilizados no
+ projeto de injeção (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+Quando se estuda a distribuição de pressão no meio poroso (dentro de uma
+ determinada malha), observa-se que uma grande parcela da queda de pressão
+ entre os poços de injeção e de produção ocorre exatamente nas proximidades
+ dos poços, onde o fluxo comporta-se como sendo radial.
+ Em alguma região entre os poços o fluxo é aproximadamente linear, de modo
+ que a injetividade na malha deve ser calculada fazendo-se a combinação
+ dos fluxos que ocorrem na malha.
+ Diversos estudos foram feitos, principalmente por Deppe J.
+ (1961) e Muskat (1946), sobre injetividade para os vários tipos de geometria
+ de injeção, entre os quais podem ser destacadas as equações para os modelos
+ de linha direta, linha esconsa, “five-spot”, “seven-spot” e “nine-spot”
+ invertido.
+ Essas equações foram deduzidas admitindo-se razão de mobilidades igual
+ a 1, saturação de gás inicial igual a zero e regime permanente.
+\end_layout
+
+\begin_layout Standard
+Quando as mobilidades de fluido nas regiões varridas e não-varridas são
+ iguais, a injetividade não mudará conforme a frente de inundação avança.
+ Para padrões regulares, pode ser calculado por fórmulas matemáticas.
+\end_layout
+
+\begin_layout Standard
+Quando as mobilidades de fluido nas regiões varridas e não-varridas não
+ são iguais, a injetividade aumentará ou diminuirá conforme a frente de
+ inundação avança.
+ Nesse caso, a injetividade não foi calculada por métodos analíticos para
+ nenhum padrão prático de poço e, além disso, os resultados do modelo em
+ escala e analógico foram publicados apenas para o padrão de cinco pontos
+ (DEPPE J.,1961).
+\end_layout
+
+\begin_layout Standard
+O objetivo é apresentar um método aproximado de cálculo da injetividade
+ para o caso de mobilidades desiguais sendo aplicado a padrões regulares.
+ Antes que o método aproximado de Deppe J.
+ seja discutido, as fórmulas analíticas para mobilidades iguais serão resumidas,
+ e a solução analítica para fluxo radial com mobilidades diferentes será
+ usada para mostrar como a injetividade muda conforme a injeção avança.
+\end_layout
+
+\begin_layout Standard
+Considere um sistema radial com um poço de injeção central de raio 
+\begin_inset Formula $r_{w}$
+\end_inset
+
+ e imagine que o fluido é produzido uniformemente a partir de cada ponto
+ em um círculo de raio 
+\begin_inset Formula $r_{e}$
+\end_inset
+
+.
+ Um fluxo puramente radial resultará, e a frente entre os fluidos injetados
+ e originais será um círculo cujo raio será denominado 
+\begin_inset Formula $r_{f}$
+\end_inset
+
+ como mostram as Figuras 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4.1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema-radial-em"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../../../Desktop/UENF/8º Periodo/Hidrodinânica/Trabalho AARE HIdro/lyx/08-resultados-documentofinal-ic-msc-dsc/fig11.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema radial em poços de injeção (Adaptado de ROSA ET AL., 2006).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:4.1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../../../Desktop/UENF/8º Periodo/Hidrodinânica/Trabalho AARE HIdro/lyx/08-resultados-documentofinal-ic-msc-dsc/fig12.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema radial em poços de injeção
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema-radial-em"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Partido na equação da Lei de Darcy, e fazendo substituições para adequar-se
+ ao esquema mostrado na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:4.1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ encontramos a formulação para a injetividade ( Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4.5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).Na maioria das aplicações, é conveniente expressar a variação da injetividade
+ como o progresso da frente em termos da injetividade inicial.
+ Neste caso, isto é, uma injetividade relativa 
+\begin_inset Formula $q_{ir}$
+\end_inset
+
+, é definida como a razão da injetividade em qualquer momento
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q_{inj}=\frac{C_{1}h\lambda_{o}\triangle P}{log\left(\frac{rf}{rw}\right)\frac{1}{M}+log\left(\frac{re}{rf}\right)},\label{eq:4.5}
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $\triangle P=P_{e}-P_{w}$
+\end_inset
+
+ e 
+\begin_inset Formula $M=\frac{\lambda_{d}}{\lambda_{o}}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+Na maioria das aplicações, é conveniente expressar a variação da injetividade
+ como o progresso da frente em termos da injetividade inicial.
+ Neste caso, isto é, uma injetividade relativa 
+\begin_inset Formula $q_{ir}$
+\end_inset
+
+, é definida como a razão da injetividade em qualquer momento,dada pela
+ Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4.5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, pela a injetividade inicial, dada pela Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4.5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+com 
+\begin_inset Formula $r_{f}=r_{w.}$
+\end_inset
+
+, (DEPPE J.,1961).Fazendo a injetividade inicial (
+\begin_inset Formula $q_{inj,i})$
+\end_inset
+
+, temos:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q_{inj,i}=\frac{C_{1}h\lambda_{o}\triangle P}{log\left(\frac{re}{rf}\right)}.\label{eq:4.6}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Então, a razão entre a Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4.5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4.6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, resulta :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q_{ir}=\frac{log\left(\frac{re}{rf}\right)}{log\left(\frac{rf}{rw}\right)\frac{1}{M}+log\left(\frac{re}{rf}\right)}\label{eq:4.7}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A equação da injetividade relativa calculada através do método aproximado
+ de Deppe (Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4.7"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) será um dor cálculos realizados pelo Software na análise do comportamento
+ areal.
+ A injetividade relativa começa unitária quando 
+\begin_inset Formula $r_{f}=r_{w}$
+\end_inset
+
+ e termina quando 
+\begin_inset Formula $r_{f}=r_{e}$
+\end_inset
+
+ (correspondente à varredura completa da área e mudança completa da mobilidade
+ do fluido de 
+\begin_inset Formula $\lambda_{o}$
+\end_inset
+
+ para 
+\begin_inset Formula $\lambda_{d}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+As curvas calculadas a partir desta equação serão traçadas pelo software
+ gnuplot para quaise razões de mobilidade.
+ A injetividade relativa é plotada contra a fração da área varrida 
+\begin_inset Formula $E_{A}$
+\end_inset
+
+, ao invés de contra a posição da frente de avanço.
+ Nesse caso, a relação é 
+\begin_inset Formula $\frac{r_{f}^{2}}{r_{e}^{2}}=E_{A}$
+\end_inset
+
+ para 
+\begin_inset Formula $r_{w}\ll r_{e}$
+\end_inset
+
+.
  
 \end_layout
 
 \begin_layout Itemize
-Preste atenção a semelhanças na forma.
- Procedimentos semelhantes indicam polimorfismo e são candidatos a superclasses.
- Usualmente a classe mais genérica de uma hierarquia de classes identifica
- um assunto.
+
+\series bold
+Determinação analítica da área de varrido e do comportamento das linhas
+ de fluxo
+\end_layout
+
+\begin_layout Standard
+Conforme mostrado por Brigham (1981), em algumas situações particulares
+ é possível a determinação analítica da área de varrido, da distribuição
+ de pressão e do comportamento das linhas de fluxo em um reservatório sujeito
+ à injeção de água.
+ Dentre essas situações pode-se considerar o caso de um reservatório de
+ óleo subsaturado, homogêneo e horizontal, sujeito à injeção de água, onde
+ a razão de mobilidades seja unitária.
+ Em outras situações mais complexas, a solução obtida com essas hipóteses
+ simplificadoras fornecerá uma idéia do comportamento real.
+\end_layout
+
+\begin_layout Standard
+Considere, por exemplo, o caso de dois poços, sendo um deles injetor de
+ água, com vazão 
+\begin_inset Formula $q_{1}$
+\end_inset
+
+, e o outro produtor de óleo, com vazão 
+\begin_inset Formula $q_{2}$
+\end_inset
+
+, localizados em um reservatório muito extenso, conforme mostrado na Figura
  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema-composto-de"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ O reservatório é homogêneo e horizontal, e a razão entre as mobilidades
+ da água e do óleo é unitária.
+ Admita que a espessura do reservatório seja pequena, de modo que o fluxo
+ possa ser considerado como sendo praticamente horizontal.
+ Admita ainda que as vazões sejam medidas em condições de reservatório e
+ que os valores absolutos das vazões de injeção e de produção sejam iguais
+ a q, sendo q > 0.
+ Como normalmente convenciona-se que a vazão de produção é positiva, então
+ 
+\begin_inset Formula $q_{2}=q$
+\end_inset
+
+ e 
+\begin_inset Formula $q_{1}=-q_{2}=-q$
+\end_inset
+
+ (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../../../Desktop/UENF/8º Periodo/Hidrodinânica/Trabalho AARE HIdro/lyx/08-resultados-documentofinal-ic-msc-dsc/fig18.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema composto de um poço injetor e de um produtor (ROSA ET AL., 2006).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema-composto-de"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilizando a aproximação logarítmica para representar a solução do modelo
+ da fonte linear, a queda de pressão adimensional em um ponto qualquer de
+ um reservatório infinito, devida à produção de um poço com vazão q, é dada,
+ empregando- se um sistema compatível de unidades, pela expressão:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p_{D}(r_{D},t_{D})\equiv\frac{2\pi kh[p_{i}-p(r,t)]}{q\mu}=\frac{1}{2}[ln(t_{D}/r_{D}^{2})+0,80907]\label{eq:QUEDA-DE-PRESSAO}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para facilitar o entendimento da aplicação desse princípio, considere a
+ Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema-composto-coordenadas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, onde está representado um sistema de coordenadas cartesianas para as três
+ situações em que o programa irá fazer os cálculos, sendo C a metade da
+ distância entre os dois poços, (x,y) um ponto qualquer do sistema, 
+\begin_inset Formula $r_{1},r_{2}$
+\end_inset
+
+e 
+\begin_inset Formula $r_{3}$
+\end_inset
+
+ a distância entre os poços e o ponto (x,y).
+ Após substituir as distâncias na Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:QUEDA-DE-PRESSAO"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e fazer as manipulações matemáticas necessárias,a Eq.(................) permitem calcular
+ a pressão em qualquer ponto do reservatório, em um tempo qualquer t.
+ Conforme se observa, usando a aproximação de longo tempo (aproximação logarítmi
+ca da solução do modelo da fonte linear) para o comportamento transiente
+ de pressão, Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:QUEDA-DE-PRESSAO"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, e aplicando o princípio da superposição de efeitos, obteve-se uma solução
+ para fluxo permanente, já que não há dependência do tempo no lado direito
+ da equação.
+ Isso ocorre porque os poços injetor e produtor têm a mesma vazão, gerando
+ então no reservatório um estado permanente de fluxo, ou seja, a pressão
+ no reservatório é uma função somente da posição (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+Uma maneira de se analisar o comportamento da pressão (e consequentemente
+ das linhas de fluxo) nos sistemas mostrados na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema-composto-coordenadas"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ é verificar a forma geométrica das linhas de pressão constante, ou seja,
+ das linhas de mesmo potencial (equipotenciais), já que neste caso o potencial
+ de fluxo e a pressão do fluido são iguais, pois o fluxo é horizontal.
+ Para se analisar o comportamento das linhas equipotenciais basta admitir
+ que o lado direito da Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:14.23"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ seja constante, isto é, considerar a situação em que o quociente entre
+ as distâncias 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+ , 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+e 
+\begin_inset Formula $r_{3}$
+\end_inset
+
+ seja constante (ROSA ET AL., 2006).
+ Com isso obetemos : 
+\end_layout
+
+\begin_layout Enumerate
+Caso 1 : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+x^{4}+y^{4}+2x^{2}y^{2}+x^{2}R"-y^{2}R"=\frac{C^{2}R"}{2}\label{eq:3poco2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\ensuremath{R=\frac{r_{3}^{4}}{r_{1}^{2}r_{2}^{2}}.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R'=\frac{2RC^{2}}{R-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+R''=\frac{2C^{2}}{R^{-1}-1}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Caso 2 :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(x^{2}+y^{2})^{2}+(y^{2}-x^{2})R'=-\frac{C^{2}R'}{2}\label{eq:final}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Transformando em coordenadas polares, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r^{4}+r^{2}\left[(-cos(2\theta)\right]R'=-\frac{C^{2}R'}{2}\label{eq:POLAR}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Caso 3 : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+x^{4}+y^{4}+2x^{2}y^{2}+x^{2}R"-y^{2}R"=\frac{C^{2}R"}{2}.\label{eq:final2unj}
+\end{equation}
+
+\end_inset
+
+Transformando em coordenadas polares, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r^{4}-r^{2}\left[(sen^{2}(\theta)-cos^{2}(\theta)\right]R"=\frac{C^{2}R"}{2}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -853,7 +2072,7 @@ O que é o diagrama de pacotes
 \emph on
 
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Diagrama de pacotes
@@ -865,7 +2084,7 @@ Diagrama de pacotes
 \emph default
  – assuntos
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 assuntos
@@ -875,7 +2094,7 @@ assuntos
 
 
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 módulos
@@ -887,7 +2106,7 @@ módulos
 \emph on
 
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Diagrama de pacotes (assuntos)
