@@ -162,15 +162,6 @@ Análise de domínio
 \end_layout
 
 \begin_layout Standard
-Coelho (1991), afirmou que no processo de exploração e produção de uma reserva
- de hidrocarbonetos, suas características petrofísicas, geológicas, geofísicas
- e geoquímicas são fundamentais de entendimento para a eficiente recuperação.
- A qualidade de um reservatório esta diretamente ligado ao ambiente deposicional
- do mesmo, bem como aos processos diagenéticos que lhe deram origem.
- 
-\end_layout
-
-\begin_layout Standard
 As acumulações de petróleo possuem certa quantidade de energia, denominada
  energia primária.
  A grandeza dessa energia é determinada pelo volume e pela natureza dos
@@ -269,32 +260,6 @@ breakthrough
  da configuração geométrica do padrão de injeção, das heterogeneidades do
  reservatório e da quantidade de água injetada na área do padrão (SMITH,
  COBB , 1997).
-\end_layout
-
-\begin_layout Standard
-Quando se trata de um reservatório heterogêneo as taxas energéticas de sedimenta
-ção influenciam diretamente na seleção dos grãos.
- Em geral, ambientes de deposição com alta energia, geram reservatórios
- com boas características permoporosas, visto que os grãos foram melhor
- retrabalhados ao longo do curso até a compactação.
- Um exemplo interessante são os reservatórios originados em paleo-deltas,
- que são portadores da maior parte do óleo existente em reservatórios areníticos
- no planeta, (COELHO, 1991).
- Contudo, a taxa pode variar num mesmo ambiente, gerando reservatórios com
- variações verticais de permeabilidade, ou reservatórios heterogêneos, que
- ainda podem se dividir em dois grupos, aqueles que possuem camadas sem
- cruzamento de fluxo entre as mesmas, e os reservatórios na qual há o cruzamento
- de fluxo.
-\end_layout
-
-\begin_layout Standard
-A heterogeneidade do reservatório provavelmente tem mais influência do que
- qualquer outro fator no desempenho de uma injeção de fluido, ao passo que
- se torna a variável mais difícil de determinar (SMITH, COBB, 1997).
- É necessário entender como as variações de permeabilidade vertical e areal
- podem ser determinadas, a fim de obter uma melhor previsão de desempenho
- de eficiência do método de recuperação por injeção.
- 
 \end_layout
 
 \begin_layout Standard
@@ -791,46 +756,6 @@ noprefix "false"
 
  é a permeabilidade relativa ao óleo no banco de óleo (parte não invadida
  do reservatório) (COBB; SMITH, 1997).
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Eficiência do Varrido Vertical:
-\end_layout
-
-\begin_layout Standard
-Definida pela razão entre o volume invadido pela água e o volume total da
- malha (Equação 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:EfVVert"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-E_{v}=\frac{Volume.invadido.pela.água}{Volume.total.da.malha}\label{eq:EfVVert}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Como a própria definição mostrou, quantifica o volume invadido pela água
- injetada no reservatório, sendo significativamente afetada pela estratificação
- devido ao movimento preferencial de fluidos nas zonas mais permeáveis.
- Sofre ainda influência de outros parâmetros como razão de mobilidade, fluxo
- entre camadas, força da gravidade e forças capilares.
 \end_layout
 
 \begin_layout Section
