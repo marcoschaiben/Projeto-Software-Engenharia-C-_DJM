@@ -1,0 +1,945 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Elaboração}  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Elaboração
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Elaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Elaboração"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Depois da denição dos objetivos, da especicação do software e da montagem
+ dos primeiros diagramas de caso de uso, a etapa do projeto de engenharia
+ envolve a identicação e o estudo dos conceitos relacionados ao sistema
+ a ser desenvolvido, isto é, a análise de domínio e a identicação de pacotes.
+ Na elaboração fazemos uma análise dos requisitos, ajustando os requisitos
+ iniciais de forma a desenvolver um sistema útil e adequado, que atenda
+ às necessidades do usuário além de permitir seu reuso e futura extensão.
+\end_layout
+
+\begin_layout Section
+Análise de domínio
+\end_layout
+
+\begin_layout Standard
+As acumulações de petróleo possuem certa quantidade de energia, denominada
+ energia primária.
+ A grandeza dessa energia é determinada pelo volume e pela natureza dos
+ fluidos existentes na acumulação, bem como pelos níveis de pressão e de
+ temperatura reinantes no reservatório.
+ No processo de produção há uma dissipação da energia primária, causada
+ pela descompressão dos fluidos do reservatório e pelas resistências encontradas
+ por eles ao fluírem em direção aos poços de produção.
+ Essas resistências são devidas, ou associadas, às forças viscosas e capilares
+ presentes no meio poroso.
+ O consumo de energia primária reflete-se principalmente no decréscimo da
+ pressão do reservatório durante a sua vida produtiva, e consequente redução
+ da produtividade dos poços (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+Há duas linhas gerais de ação para aprimorar os efeitos nocivos da dissipação
+ da energia primaria dos reservatórios de petróleo: Suplementando a com
+ energia secundária através da injeção ou reduzindo as resistências viscosas
+ e/ou capilares por meio de metodos especiais, como por exemplo o aquecimento
+ da jazida (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+A quantidade de óleo que pode ser retirada de um reservatório unicamente
+ às expensas de suas energias naturais é chamada de recuperação primária.
+ Por outro lado, recuperação secundária é a quantidade adicional de óleo
+ obtida por suplementação da energia primária com energia secundária, artificial
+mente transferida para a jazida, ou por meios que tendem a tornar a energia
+ primária mais eficiente.
+ Os objetivos práticos básicos dos métodos de recuperação secundária são
+ o aumento da eficiência de recuperação e a aceleração da produção (ROSA
+ ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+Em um projeto de injeção de fluidos a escolha do esquema de injeção - distribuiç
+ão dos poços de injeção e produção - é fundamental, pois o sucesso aumenta
+ à medida que certas linhas básicas de procedimento são adotadas ao se fazer
+ essa escolha.Como o objetivo primordial da injeção é o aumento da recuperação
+ de petróleo, deve-se tentar produzir esse volume adicional desejado utilizando-
+se esquemas em que os volumes de fluidos injetados sejam os menores possíveis.
+ Devem ser buscadas situações em que a maior quantidade de fluido injetado
+ permaneça no interior do reservatório, ou seja, a produção do fluido injetado
+ seja a menor possível.
+ As relações entre pressões e vazões e as relações destas últimas com o
+ tempo do projeto são da maior importância e, portanto, devem ser encaradas
+ como aspectos fundamentais a serem levados em conta no projeto.
+ Finalmente, devem ser observadas as características particulares do reservatóri
+o em estudo, tais como a existência de falhas, variações de permeabilidade,
+ estratificações, barreiras etc.
+ Além disso, o aspecto econômico é decisivo (ROSA ET AL., 2006).
+\end_layout
+
+\begin_layout Standard
+A teoria do avanço frontal é usada para calcular a vazão dos poços em esquemas
+ de injeção, e em algumas de suas simplificações assumem que o fluxo entre
+ os poços de injeção e produção é linear (todos os caminhos de fluxo são
+ linhas retas) e que 100% do volume do poro do reservatório é contatado
+ por água Injetada.
+ Embora este comportamento possa ser aproximado em alguns reservatórios
+ alongados, o fluxo linear ideal seria possível apenas se os fluidos pudessem
+ ser injetados e produzidos a partir de toda a seção transversal do reservatório
+, ao invés de ser através da área limitada de um poço.
+ Este problema é ainda mais complicado pelo fato da maioria dos campos serem
+ desenvolvidos e a injeção de água ser feita utilizando algum padrão regular
+ de poço (SMITH, COBB , 1997).
+\end_layout
+
+\begin_layout Standard
+Olhando para esses campos, tanto a injeção quanto a produção ocorrem em
+ pontos.
+ Se os padrões forem simétricos, o caminho de viagem mais curto e o maior
+ gradiente de pressão ocorrerão ao longo de uma linha reta entre os produtores
+ e os injetores.
+ Consequentemente, a água injetada que viaja ao longo desta linha de fluxo
+ chegará primeiro aos poços produtores.
+ A água que trafega por linhas mais longas não terá atingido o poço produtor
+ no momento do 
+\begin_inset Quotes eld
+\end_inset
+
+breakthrough
+\begin_inset Quotes erd
+\end_inset
+
+ e, consequentemente, parte do reservatório não terá sido contatada pela
+ água naquele momento.
+ Aquela fração de um padrão de injeção de água que foi contatada pela água
+ em um determinado momento durante uma injeção é chamada de eficiência de
+ varredura de padrão ou eficiência de varredura de área.
+ Tecnicamente, a eficiência da varredura padrão deve ser usada quando se
+ refere às aplicações de campo, e a eficiência da varredura da área só deve
+ ser usada quando se refere aos resultados dos estudos do modelo.
+ Em geral, a eficiência da varredura da área dependerá da razão de mobilidade,
+ da configuração geométrica do padrão de injeção, das heterogeneidades do
+ reservatório e da quantidade de água injetada na área do padrão (SMITH,
+ COBB , 1997).
+\end_layout
+
+\begin_layout Standard
+Neste trabalho serão discutidos conceitos de razão mobilidade, condutividade,
+ esquemas de injeções em malhas, linhas de fluxo e de pressão, a área invadida
+ pela água, bem como a eficiência do varrido horizontal em reservatórios
+ homogênios.
+\end_layout
+
+\begin_layout Section
+Conceitos Teóricos
+\end_layout
+
+\begin_layout Standard
+O conhecimento das propriedades das rochas e fuidos é essencial para o desenvolv
+imento de qualquer metodologia para aumentar o fator de recuperação do petróleo.
+ Assim, será mostrado denições de porosidade absoluta e relativa, molhabilidade,
+ permeabilidade absoluta, fator de recuperação, mobilidade, razão mobilodade,
+ entre outros.
+\end_layout
+
+\begin_layout Subsection
+Conceitos Fundamentais e Propriedades de Rochas e Fluidos
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Porosidade: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A porosidade de uma rocha é defnida como a razão entre o volume poroso,
+ capaz de armazenar fluidos, e o volume total da rocha, que é dado pela
+ soma do volume poroso e do volume da parte sólida da rocha.
+ A porosidade mede o volume dos espaços vazios em um meio poroso, independente
+ de estarem ou não interligados.
+ Portanto, a porosidade é um parâmetro petrofísico de grande importância
+ visto que se consegue medir a capacidade de armazenagem de fluidos em um
+ corpo poroso [Rosa et al., 2006].
+\end_layout
+
+\begin_layout Standard
+Assim, a porosidade (
+\begin_inset Formula $\phi$
+\end_inset
+
+), expresso em porcentagem, pode ser denida como a razão entre o volume
+ poroso (Vp) e o volume total (Vt) da amostra (Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:porosidade"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ), onde o volume total é dado pela soma do espaço poroso e da fase sólida
+ (Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:volumeTotal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi=\frac{V_{p}}{V_{t}}\label{eq:porosidade}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{t}=V_{p}+V_{sólida}\label{eq:volumeTotal}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Molhabilidade: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+O deslocamento de petróleo por meio dos poros da rocha reservatório também
+ é influenciado por outros parâmetros petrofísicos como a molhabilidade,
+ a qual pode ser definida como a capacidade de um fluido de se espalhar
+ em uma superfície sólida na presença de outros fluidos, ou seja, é a tendência
+ da superfície de ter mais afinidade por um fluido em detrimento de outro,
+ também presente no meio poroso.
+ Isto signica que em um fluxo.multifásico, um fludo tem mais anidade com
+ o meio poroso que outros uidos presentes [Rosa et al., 2006, Dandekar, 2013].
+ Desta forma, a molhabilidade quantifica a afinidade que a superfície da
+ rocha apresenta para cada fluido na presença de outros, estando relacionada
+ com as forças intermoleculares que atuam entre a superfície e as moléculas
+ dos líquidos presentes.
+ Em reservatórios de petróleo, encontram-se basicamente duas fases líquidas,
+ formadas pelo óleo e a água [Rosa et al., 2006].
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Permeabilidade:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A permeabilidade é uma das características petrofísicas mais importantes
+ de um reservatório, sendo a capacidade da rocha de permitir o escoamento
+ de fluidos.
+ Uma rocha pode ter alta porosidade e apresentar baixa permeabilidade, caso
+ os poros não sejam bem conectados, ou seja, para que o reservatório seja
+ produtivo não basta um alto valor de porosidade, a rocha deve possuir a
+ capacidade de permitir o deslocamento de fluidos através dela [Rosa et
+ al., 2006].
+ 
+\end_layout
+
+\begin_layout Standard
+Este parâmetro é um dos que tem mais influência na determinação da capacidade
+ de produção de hidrocarbonetos acumulados.
+ A permeabilidade (k) é uma propriedade dinâmica, definida como a capacidade
+ de um dado meio poroso se deixar atravessar por um fluido [Rosa et al.,
+ 2006].
+ Ela é uma função da posição e pressão, e varia fortemente com o tamanho
+ dos poros e sua distribuição em determinado local [Lake et al., 1989].
+\end_layout
+
+\begin_layout Standard
+O conceito de permeabilidade aparece na lei que governa o deslocamento dos
+ fluidos através de meios porosos, conhecida como a Lei de Darcy, sendo
+ medida em milidarcy (md).
+ Existem dois tipos de permeabilidades, a permeabilidade absoluta, quando
+ o reservatório está saturado com um único fluido, e a permeabilidade efetiva,
+ quando existem dois ou mais fluidos coexistindo dentro de uma mesma rocha
+ [Albuquerque et al., 2007, Dandekar, 2013].
+ O desenvolvimento da expressão que permite encontrar a permeabilidade absoluta
+ de um meio poroso é utilizado até os dias atuais na indústria do petr óleo.
+ O experimento original de Darcy investigou o fluxo de água através da areia
+ e concluiu que um fluxo linear com vazão de injeção (q) é função da condutivida
+de hidráulica (k), da área da seção transversal (A), do diferencial de pressão
+ da entrada para a saída (
+\begin_inset Formula $\triangle P$
+\end_inset
+
+) e do comprimento do meio poroso (L), conforme mostra a Equação [Rosa et
+ al., 2006, Lake et al., 1989].
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q=\frac{kA\triangle P}{\mu L}\label{eq:lei-darcy}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A permeabilidade absoluta pode ser calculada isolando k na equação de Darcy
+ conforme Equação
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:k"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+k=\frac{q\mu L}{A\triangle P}\label{eq:k}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sendo:
+\end_layout
+
+\begin_layout Standard
+K = Permeabilidade 
+\end_layout
+
+\begin_layout Standard
+A = Área da seção transversal
+\end_layout
+
+\begin_layout Standard
+m = Viscosidade
+\end_layout
+
+\begin_layout Standard
+L = Comprimento do meio poroso
+\end_layout
+
+\begin_layout Standard
+Desta forma, durante um fluxo, se todas as variáveis são conhecidas, menos
+ a permeabilidade, torna-se possível encontrá-la.
+ A forma para a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:k"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ é utilizada para um fluxo linear.
+ Em poços, com fluxo radial, modifica-se a geometria para definir a permeabilida
+de levando em consideração o raio externo do reservatório, o raio do poço,
+ a pressão externa do reservatório, e a pressão medida no poço em uma determinad
+a altura do reservatório, como será visto na fundamentação teórica dos métodos
+ utilizados neste trabalho [Rosa et al., 2006].
+ A permeabilidade efetiva (ke), quando dois ou mais fluidos saturam o meio
+ poroso [Rosa et al., 2006], sempre apresentará valores menores do que o
+ valor da permeabilidade absoluta da rocha.
+ O cálculo das permeabilidades efetivas à água e ao óleo (kw e ko) também
+ pode ser realizado usando a Lei de Darcy conforme Equações 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:krw"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:kro"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ [Rosa et al., 2006].
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+k_{rw}=\frac{k_{w}Lq_{w}}{A\triangle P}\label{eq:krw}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+k_{ro}=\frac{k_{o}Lq_{o}}{A\triangle P}\label{eq:kro}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A razão entre a permeabilidade efetiva de determinado uido no meio poroso
+ e a permeabilidade absoluta é denominada permeabilidade relativa (kr),
+ a qual pode ser representada pelas Equações 3.9 e 3.10 para um sistema bifásico
+ óleo-água.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{equation}
+k_{rw}=\frac{k_{w}}{k}\label{eq:krw/k}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{equation}
+k_{ro}=\frac{k_{o}}{k}\label{eq:kro/k}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este parâmetro sofre efeitos da variação da saturação dos fluidos, da molhabilid
+ade da rocha, da estrutura dos poros da rocha, da tensão de confinamento,
+ do teor de argila da rocha, da migração de finos, da temperatura, além
+ das variações de tensão interfacial, viscosidade e velocidade do fluxo
+ [Dandekar, 2013].
+ 
+\end_layout
+
+\begin_layout Standard
+O aumento da saturação de um fluido molhante no meio poroso em relação a
+ outro fluido chama-se de embebição, e, por outro lado, quando existe uma
+ redução de saturação do fluido que molha preferencialmente a rocha em relação
+ a outro fluido, tem-se uma drenagem [Donaldson et al., 1985].
+ Assim, no processo de embebição, é necessário que haja uma determinada
+ saturação da fase molhante no inicio do fluxo, chamada saturação de água
+ conata ou saturação irredutível (Swi).
+ Da mesma forma ocorre no processo de drenagem, e essa saturação é denominada
+ saturação de óleo residual (Sor).
+ A saturação da fase não molhante atinge seu valor máximo a saturações menores
+ que 100%, o que indica que nem todo o meio poroso interligado irá contribuir
+ ao uxo desta fase [Núñez, 2011].
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Mobilidade e Razão Mobilidade:
+\end_layout
+
+\begin_layout Standard
+Na lei de Darcy, há um fator de proporcionalidade relacionado à velocidade
+ de um fluido e ao gradiente de pressão.
+ Este fator de proporcionalidade, denominado mobilidade do fluido, é a permeabil
+idade efetiva da rocha à esse fluido, dividida pela viscosidade do mesmo
+ (CRAIG, F.F.,1971).
+ 
+\end_layout
+
+\begin_layout Standard
+Se três fluidos (óleo, água e gás) estiverem presentes no meio poroso as
+ suas mobilidades serão definidas, respectivamente, por: 
+\begin_inset Formula 
+\begin{equation}
+\lambda_{w}=\frac{k_{w}}{\mu_{w}},\label{eq:1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\lambda_{o}=\frac{k_{o}}{\mu_{o}},\label{eq:2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\lambda_{g}=\frac{k_{g}}{\mu_{g}},\label{eq:3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Muskat (1937) discutiu pela primeira vez o termo que ficou conhecido como
+ razão de mobilidade.
+ Posteriormente, foi usado para relacionar a mobilidade da água na porção
+ de uma injeção no contato água com a mobilidade do óleo no banco de óleo.
+ Ele apresentou as distribuições de pressão em regime permanente para uma
+ série de arranjos de poços de produção de injeção, isto é, sob condições
+ de uma razão de mobilidade unitária.
+ A razão de mobilidades (M) é a relação entre a mobilidade do fluido deslocante
+ 
+\begin_inset Formula $(\lambda_{d}$
+\end_inset
+
+) atrás da frente de avanço do mesmo e a mobilidade do fluido deslocado
+ no banco deste fluido.
+ Por exemplo, no caso do fluido deslocado ser o óleo a razão de mobilidades
+ é dada por : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M=\frac{k_{d}}{\mu_{d}}\frac{\mu_{o}}{k_{o}}=\frac{\lambda_{d}}{\lambda_{o}},\label{eq:3.1}
+\end{equation}
+
+\end_inset
+
+ onde o subscrito 
+\begin_inset Formula $d$
+\end_inset
+
+ denota a fase de deslocamento.
+ Na terminologia de injeção de água, isso se torna,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M=\frac{k_{w}}{\mu_{w}}\frac{\mu_{o}}{k_{o}}=\frac{k_{w}}{\mu_{w}}\frac{\mu_{o}}{k_{ro}},\label{eq:3.2}
+\end{equation}
+
+\end_inset
+
+ como a permeabilidade efetiva é função da saturação, a mobilidade também
+ é.
+\end_layout
+
+\begin_layout Standard
+É importante notar que as permeabilidades relativas à água e óleo na Eq.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ são definidas em dois pontos separados no reservatório, ou seja, 
+\begin_inset Formula $k_{w}$
+\end_inset
+
+ é a permeabilidade relativa à água na parte do reservatório em contato
+ com a água (na parte invadida pela água) e 
+\begin_inset Formula $k_{o}$
+\end_inset
+
+ é a permeabilidade relativa ao óleo no banco de óleo (parte não invadida
+ do reservatório) (COBB; SMITH, 1997).
+\end_layout
+
+\begin_layout Section
+Formulações 
+\end_layout
+
+\begin_layout Section
+Identificação de pacotes – assuntos
+\end_layout
+
+\begin_layout Standard
+...aqui...
+\end_layout
+
+\begin_layout Itemize
+Nome Pacote: Descrição.
+ O que é, para que serve, como se relaciona com os demais pacotes.
+\end_layout
+
+\begin_layout Itemize
+Nome Pacote: Descrição.
+ O que é, para que serve, como se relaciona com os demais pacotes.
+\end_layout
+
+\begin_layout Itemize
+Nome Pacote: Descrição.
+ O que é, para que serve, como se relaciona com os demais pacotes.
+\end_layout
+
+\begin_layout Section
+O que é o diagrama de pacotes
+\emph on
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diagrama de pacotes
+\end_layout
+
+\end_inset
+
+
+\emph default
+ – assuntos
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+assuntos
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+módulos
+\end_layout
+
+\end_inset
+
+
+\emph on
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Diagrama de pacotes (assuntos)
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:diagrama de assuntos-pacotes"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Um diagrama de pacotes é útil para mostrar as dependências entre as diversas
+ partes do sistema; pode incluir: sistemas, subsistemas, hierarquias de
+ classes, classes, interfaces, componentes, nós, colaborações e casos de
+ uso.
+\end_layout
+
+\begin_layout Standard
+O exemplo da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+ apresenta um diagrama de pacotes para um sistema de métodos numéricos.
+ Observe que o diagrama de pacotes inclui um pacote bibliotecas, o qual
+ é dividido em bibliotecas matemáticas, de estatística e de simulação.
+ A seguir o componente biblioteca de simulação será detalhado.
+ 
+\end_layout
+
+\begin_layout Section
+Diagrama de pacotes – assuntos
+\end_layout
+
+\begin_layout Standard
+...aqui...
+\end_layout
+
+\begin_layout Standard
+coloque aqui texto falando do diagrama de pacotes, referencie a figura.
+ Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/AnaliseDeDominio.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Pacotes
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+Nota: 
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Não perca de vista a visão do todo; do projeto de engenharia como um todo.
+ Cada capítulo, cada seção, cada parágrafo deve se encaixar.
+ Este é um diferencial fundamental do engenheiro em relação ao técnico,
+ a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
+ de modelar processos/sistemas/produtos de engenharia.
+\end_layout
+
+\end_body
+\end_document

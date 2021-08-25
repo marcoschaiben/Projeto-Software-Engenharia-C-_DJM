@@ -1,0 +1,1288 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement ph
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Especificação}  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Especificação
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Concepção
+\end_layout
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+especificação
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O desenvolvimento de um projeto de engenharia é constituído por várias etapas,
+ e a primeira delas se trata da especificação/concepção.
+ Neste capítulo serão definidos os requisitos a serem satisfeitos e as especific
+ações do sistema como a descrição do objeto, o que se espera do projeto
+ e o contexto da aplicação para o estudo dos processos de recuperação secundária
+ de óleo.
+\end_layout
+
+\begin_layout Section
+Especificação do Software - Requisitos
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Concepção
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Concepção"
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+especificação
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Especificação"
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Especificações
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Especificação e cenários"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nesta seção são descritas as principais características, além dos requisitos
+ para a utilização do software desenvolvido.
+\end_layout
+
+\begin_layout Subsection
+Nome do sistema/produto 
+\end_layout
+
+\begin_layout Standard
+Na Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Característica-do-software"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, apresenta-se as características do software.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Característica do software 
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Característica-do-software"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="8cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Nome
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Modelos de Deslocamentos Imiscíveis Bifásico Usados no Processo de Recuperação
+ Secundária de Petróleo
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Componentes principais
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Modelos de
+\series bold
+ Fluxo Bifásico 1D
+\series default
+ para o estudo sobre o cálculo da recuperação de óleo resultante do deslocamento
+ por um fluido imiscível a partir da equação de buckley-Leverett em conjunto
+ com o Método das Característica para solução de problemas do tipo Riemann
+ e Goursat-Riemann,
+\series bold
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\series bold
+Fluxo Bifásico Areal 
+\series default
+para cálculo do comportamento das propriedades de reservatório homogênio
+ em esquemas de injeção em malhas e
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\series bold
+Fluxo Bifásico em Sistema Estratificado
+\series default
+ para previsão de desempenho num processo de recuperação secundária do óleo
+ de acordo com o modelo de Dykstra-Parsons (1950) e Stiles (1949).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Missão
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Calcular a permeabilidade relativa a partir do modelo de Corey-Brooks;
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Calcular o deslocamento do óleo a partir de um fluido imiscível pela equação
+ de Buckey Leverett e solucionar o problema do tipo Riemann e Goursat-Riemann
+ pelo método das características;
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Calcular comportamento da pressão em reservatório homogênio em esquemas
+ de injeção em malhas; Calcular área invadida pela injeção de água no instante
+ do 
+\begin_inset Quotes eld
+\end_inset
+
+breakthrough
+\begin_inset Quotes erd
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Calcular mobilidade relativa do óleo à água;
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Cálculo da frente de avanço da camada em cada 
+\begin_inset Quotes eld
+\end_inset
+
+breakthrough
+\begin_inset Quotes erd
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Cálculo da eficiência vertical em cada BT;
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Cálculo do volume de óleo recuperado total;
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Cálculo do tempo necessário do BT na última camada (todo óleo recuperável
+ possível por esse método de injeção) .
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Especificação
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+especificação
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O projeto a ser desenvolvido consiste em um programa que calculará característic
+as de um reservatório homogêneo a partir de um fluxo bifásico areal, preverá
+ o desempenho no processo de recuperação secundária do óleo a partir de
+ um sistema estratificado com fluxo bifásico e fará estimativa da velocidade
+ pelo modelo de fluxo bifásico unidimencional a partir da equação de Buckey
+ Leverett.
+\end_layout
+
+\begin_layout Standard
+A presente construção do sistema será utilizado em âmbito acadêmico como
+ software livre, a partir do uso da Programação Orientada a Objeto em C++
+ e software Gnuplot, para que esteja disponível de fácil acesso a todos.
+ A interface selecionada para o programa é em modo texto, o usuário irá
+ se relacionar a partir do uso do teclado, mouse e monitor em conjunto com
+ a interface do sistema construído.
+ Os dados de entrada, propriedades do reservatório, serão fornecidos em
+ modo .xlsx, na qual poderá ser modificado pelo usuário com base nas informações
+ do reservatório em questão, enquanto que os dados de saída serão em modo
+ arquivo de texto .txt e imagem .png com base nos diferentes modelos de deslocamen
+to possíveis do software.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Dados/Atributos relativos ao reservatório: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Porosidade;
+\end_layout
+
+\begin_layout Itemize
+Diferencial de Pressão [Pa];
+\end_layout
+
+\begin_layout Itemize
+Permeabilidade [mD];
+\end_layout
+
+\begin_layout Itemize
+Dimensões [m];
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Dados/Atributos relativos aos fluidos: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Saturação de água irredutivel;
+\end_layout
+
+\begin_layout Itemize
+Saturação de óleo residual;
+\end_layout
+
+\begin_layout Itemize
+Viscosidade da água [Pa.s];
+\end_layout
+
+\begin_layout Itemize
+Viscosidade do óleo [Pa.s];
+\end_layout
+
+\begin_layout Itemize
+Mobilidade [Kg.
+\begin_inset Formula $m^{3}$
+\end_inset
+
+].
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Dados/Atributos relativos ao teste de injeção:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Vazão de injeção [
+\begin_inset Formula $m^{3}/s$
+\end_inset
+
+];
+\end_layout
+
+\begin_layout Itemize
+Esquemas de injeção;
+\end_layout
+
+\begin_layout Itemize
+Volume de óleo produzido [
+\begin_inset Formula $m^{3}]$
+\end_inset
+
+;
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Requisitos funcionais
+\end_layout
+
+\begin_layout Standard
+Apresenta-se a seguir os requisitos funcionais.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="block" valignment="top">
+<column alignment="block" valignment="top" width="11.5cm">
+<row>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RF-01
+\end_layout
+
+\end_inset
+</cell>
+<cell mroffset="2cm" alignment="block" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O usuário deverá ser capaz de incluir valores de parâmetros de reservatório
+ e propriedades do fluido;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RF-02
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O usuário deverá ter liberdade para carregar dados a partir de um arquivo
+ de disco criado pelo mesmo;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RF-03
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Os resultados deverão ser exportados como textos e/ou gráficos;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RF-04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O usuário poderá plotar seus resultados em um gráfico.
+ O gráfico poderá ser salvo como imagem ou ter seus dados exportados como
+ texto.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11.5cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RF-05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O usuário deve ter tal liberdade para escolher os modelos disponíveis para
+ cálculo;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Requisitos não funcionais
+\end_layout
+
+\begin_layout Standard
+Apresenta-se a seguir os requisitos não-funcionais.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RNF-01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Os cálculos devem ser feitos utilizando-se formulações matemáticas conhecidas
+ da literatura;.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle" tabularwidth="14cm">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="11cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+RNF-02
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+O programa deverá ser multi-plataforma, podendo ser executado em 
+\emph on
+Windows
+\emph default
+, 
+\emph on
+GNU/Linux
+\emph default
+ ou 
+\emph on
+Mac
+\emph default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Casos de uso do software 
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Casos-de-uso-do-programa"
+
+\end_inset
+
+
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Cenário
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ apresenta um caso de uso do sistema, bem como os diagramas de caso de uso.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Caso de uso geral do sistema.
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Exemplo-de-um-caso-de-uso (tabela)"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="block" valignment="top" width="10cm">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Nome do caso de uso:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Modelagem de Fluxo Bifásico Imiscísvel em Reservatório
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Resumo/descrição:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cálculo das características de um reservatório homogêneo
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Cálculo do desempenho no processo de recuperação secundária
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Calculo do fluxo fracionário
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Etapas: 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.
+ Inserir dados de entrada
+\end_layout
+
+\begin_layout Plain Layout
+2.
+ Definir esquema de injeção
+\end_layout
+
+\begin_layout Plain Layout
+3.
+ Calcular fluxo fracionário
+\end_layout
+
+\begin_layout Plain Layout
+4.
+ Calcular características do reservatório e desempenho do processo de recuperaçã
+o secundária;
+\end_layout
+
+\begin_layout Plain Layout
+5.
+ Gerar gráficos.
+\end_layout
+
+\begin_layout Plain Layout
+6.
+ Analisar resultados;
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cenários alternativos:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inserir modelos, esquemas ou dados incompatíveis com a ordem de grandeza
+ do problema.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+As Figuras devem ficar GRANDES; bem legíveis!! se necessário dar zoom!!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Diagrama de caso de uso geral
+\end_layout
+
+\begin_layout Standard
+O diagrama de caso uso geral da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-caso-uso-geral"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ exibe o usuário interagindo com o software para obter o fluxo bifásico,
+ características do reservatório e previsão do desempenho durante um processo
+ de injeção.
+ Neste caso de uso geral, o usuário insere os dados de entrada .xlsx, define
+ o esquema de injeção, calcula o do fluxo fracionário, calcula as característica
+s de um reservatório homogêneo, calcula o desempenho no processo de recuperação
+ secundária e plotará gráficos de comportamento de pressão, de mobilidade,
+ perfís de velocidade, perfis de fluxo fracionário, perfis de saturação,
+ volume de óleo produzido em função do tempo e gera dados de saída .txt com
+ dados de presão, área invadida, posição da frente de avanço da água injetada,
+ vazões de injeção e produção, volume de óleo produzido e tempo de produção.
+ O usuário pode então fazer a análise dos resultados obtidos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/DiagCasoDeUso-AnaliseDosResultados.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de caso de uso geral – Modelos de fluxo bifásico em reservatórios
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-caso-uso-geral"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Diagrama de caso de uso específico
+\end_layout
+
+\begin_layout Standard
+O diagrama de caso de uso específico da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ é um detalhamento do caso de uso para os calculos que serão realizados,
+ ele mostra a interação do usuário com o software para realizar os cálculo
+ descritos anteriormente usando os modelos de deslocamento imiscível bifásico.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/diagrama de caso de uso especifico.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de caso de uso específico – Modelos de fluxo bifásico em reservatórios
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
