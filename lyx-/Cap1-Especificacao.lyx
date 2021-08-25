@@ -239,7 +239,6 @@ noprefix "false"
 
 \begin_layout Standard
 \begin_inset Float table
-placement H
 wide false
 sideways false
 status open
@@ -268,10 +267,10 @@ name "tab:Característica-do-software"
 \begin_inset Tabular
 <lyxtabular version="3" rows="3" columns="2">
 <features tabularvalignment="middle" tabularwidth="14cm">
-<column alignment="center" valignment="top">
-<column alignment="block" valignment="top" width="8cm">
+<column alignment="center" valignment="middle" width="3.5cm">
+<column alignment="block" valignment="top" width="10cm">
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -294,10 +293,11 @@ Modelos de Deslocamentos Imiscíveis Bifásico Usados no Processo de Recuperaç�
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" usebox="none">
+<cell alignment="center" valignment="middle" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+\align center
 
 \series bold
 Componentes principais
@@ -349,7 +349,7 @@ Fluxo Bifásico em Sistema Estratificado
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="center" valignment="bottom" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -360,7 +360,7 @@ Missão
 
 \end_inset
 </cell>
-<cell alignment="block" valignment="top" topline="true" bottomline="true" usebox="none">
+<cell alignment="block" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
