@@ -312,7 +312,8 @@ Conhecimentos Teóricos
 O conhecimento das propriedades das rochas e fuidos é essencial para o desenvolv
 imento de qualquer metodologia para aumentar o fator de recuperação do petróleo.
  Assim, será mostrado denições de porosidade absoluta e relativa, molhabilidade,
- permeabilidade absoluta, fator de recuperação, entre outros.
+ permeabilidade absoluta, fator de recuperação, mobilidade, razão mobilodade,
+ entre outros.
 \end_layout
 
 \begin_layout Subsection
@@ -390,24 +391,14 @@ V_{t}=V_{p}+V_{sólida}\label{eq:volumeTotal}
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-ALGUEM VAI USAR MOLHABILIDADE?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Itemize
 
 \series bold
 Molhabilidade: 
-\series default
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 O deslocamento de petróleo por meio dos poros da rocha reservatório também
  é influenciado por outros parâmetros petrofísicos como a molhabilidade,
  a qual pode ser definida como a capacidade de um fluido de se espalhar
@@ -416,32 +407,16 @@ O deslocamento de petróleo por meio dos poros da rocha reservatório também
  também presente no meio poroso.
  Isto signica que em um fluxo.multifásico, um fludo tem mais anidade com
  o meio poroso que outros uidos presentes [Rosa et al., 2006, Dandekar, 2013].
- Desta forma, a molhabilidade quantica a anidade que a superfície da rocha
- apresenta para cada uido na presença de outros, estando relacionada com
- as forças intermoleculares que atuam entre a superfície e as moléculas
+ Desta forma, a molhabilidade quantifica a afinidade que a superfície da
+ rocha apresenta para cada fluido na presença de outros, estando relacionada
+ com as forças intermoleculares que atuam entre a superfície e as moléculas
  dos líquidos presentes.
  Em reservatórios de petróleo, encontram-se basicamente duas fases líquidas,
  formadas pelo óleo e a água [Rosa et al., 2006].
- A molhabilidade de uma rocha-reservatório varia de acordo com a interação
- dos uidos com a superfície da rocha reservatório, podendo ser mais fortemente
- molhável ao óleo ou à água [Rosa et al., 2006, Agbalaka et al., 2008].
- Além disso, a molhabilidade pode variar a partir do contato óleo-água dependend
-o da saturação de água, ou devido às diferenças na composição da rocha ou
- mineralogia, sendo amplamente reconhecida como uma importante parte da
- descrição do reservatório [Buckley, 1999].
- A molhabilidade tem impacto fundamental nas características petrofísicas
- das rochas e uma das formas de se considerar os impactos deste parâmetro
- na produção e recupera- ção de petróleo são através das curvas de permeabilidad
-e relativa [Donaldson et al., 1985].
- Donaldson e Thomas (1971), em análises de laboratórios, vericaram um aumento
- da permeabilidade relativa à água e uma diminuição da permeabilidade relativa
- ao óleo quando a molhabilidade ao óleo era mais acentuada.
- Isto mostra que quanto mais o meio poroso for molhável ao óleo, maior a
- saturação de água posicionada no centro dos poros competindo com o óleo
- nos caminhos mais permeáveis, reduzindo a permeabilidade relativa ao óleo,
- e aumentando a permeabilidade relativa à água.
+ 
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 
 \series bold
@@ -456,40 +431,366 @@ A permeabilidade é uma das características petrofísicas mais importantes
  Uma rocha pode ter alta porosidade e apresentar baixa permeabilidade, caso
  os poros não sejam bem conectados, ou seja, para que o reservatório seja
  produtivo não basta um alto valor de porosidade, a rocha deve possuir a
- capacidade de permitir o deslocamento de uidos através dela [Rosa et al.,
- 2006].
+ capacidade de permitir o deslocamento de fluidos através dela [Rosa et
+ al., 2006].
  
 \end_layout
 
 \begin_layout Standard
-Este parâmetro é um dos que tem mais inuência na determina ção da capacidade
+Este parâmetro é um dos que tem mais influência na determinação da capacidade
  de produção de hidrocarbonetos acumulados.
- A permeabilidade (k) é uma propriedade dinâmica, denida como a capacidade
- de um dado meio poroso se deixar atravessar por um uido [Rosa et al., 2006].
- Ela é uma função da posição e press ão, e varia fortemente com o tamanho
+ A permeabilidade (k) é uma propriedade dinâmica, definida como a capacidade
+ de um dado meio poroso se deixar atravessar por um fluido [Rosa et al.,
+ 2006].
+ Ela é uma função da posição e pressão, e varia fortemente com o tamanho
  dos poros e sua distribuição em determinado local [Lake et al., 1989].
+\end_layout
+
+\begin_layout Standard
+O conceito de permeabilidade aparece na lei que governa o deslocamento dos
+ fluidos através de meios porosos, conhecida como a Lei de Darcy, sendo
+ medida em milidarcy (md).
+ Existem dois tipos de permeabilidades, a permeabilidade absoluta, quando
+ o reservatório está saturado com um único fluido, e a permeabilidade efetiva,
+ quando existem dois ou mais fluidos coexistindo dentro de uma mesma rocha
+ [Albuquerque et al., 2007, Dandekar, 2013].
+ O desenvolvimento da expressão que permite encontrar a permeabilidade absoluta
+ de um meio poroso é utilizado até os dias atuais na indústria do petr óleo.
+ O experimento original de Darcy investigou o fluxo de água através da areia
+ e concluiu que um fluxo linear com vazão de injeção (q) é função da condutivida
+de hidráulica (k), da área da seção transversal (A), do diferencial de pressão
+ da entrada para a saída (
+\begin_inset Formula $\triangle P$
+\end_inset
+
+) e do comprimento do meio poroso (L), conforme mostra a Equação [Rosa et
+ al., 2006, Lake et al., 1989].
 \end_layout
 
 \end_deeper
 \begin_layout Standard
-O conceito de permeabilidade aparece na lei que governa o deslocamento dos
- uidos através de meios porosos, conhecida como a Lei de Darcy, sendo medida
- em milidarcy (md).
- Existem dois tipos de permeabilidades, a permeabilidade absoluta, quando
- o reservat ório está saturado com um único uido, e a permeabilidade efetiva,
- quando existem dois ou mais uidos coexistindo dentro de uma mesma rocha
- [Albuquerque et al., 2007, Dandekar, 2013].
- O desenvolvimento da expressão que permite encontrar a permeabilidade.
+\begin_inset Formula 
+\begin{equation}
+q=\frac{kA\triangle P}{\mu L}\label{eq:lei-darcy}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-absoluta de um meio poroso é utilizado até os dias atuais na indústria do
- petr óleo.
- O experimento original de Darcy investigou o uxo de água através da areia
- e concluiu que um uxo linear com vazão de injeção (q) é função da condutividade
- hidr áulica (k), da área da seção transversal (A), do diferencial de pressão
- da entrada para a saída (p) e do comprimento do meio poroso (L), conforme
- mostra a Equação 3.5 [Rosa et al., 2006, Lake et al., 1989].
+A permeabilidade absoluta pode ser calculada isolando k na equação de Darcy
+ conforme Equação
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:k"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+k=\frac{q\mu L}{A\triangle P}\label{eq:k}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sendo:
+\end_layout
+
+\begin_layout Standard
+K = Permeabilidade 
+\end_layout
+
+\begin_layout Standard
+A = Área da seção transversal
+\end_layout
+
+\begin_layout Standard
+m = Viscosidade
+\end_layout
+
+\begin_layout Standard
+L = Comprimento do meio poroso
+\end_layout
+
+\begin_layout Standard
+Desta forma, durante um fluxo, se todas as variáveis são conhecidas, menos
+ a permeabilidade, torna-se possível encontrá-la.
+ A forma para a Equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:k"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ é utilizada para um fluxo linear.
+ Em poços, com fluxo radial, modifica-se a geometria para definir a permeabilida
+de levando em consideração o raio externo do reservatório, o raio do poço,
+ a pressão externa do reservatório, e a pressão medida no poço em uma determinad
+a altura do reservatório, como será visto na fundamentação teórica dos métodos
+ utilizados neste trabalho [Rosa et al., 2006].
+ A permeabilidade efetiva (ke), quando dois ou mais fluidos saturam o meio
+ poroso [Rosa et al., 2006], sempre apresentará valores menores do que o
+ valor da permeabilidade absoluta da rocha.
+ O cálculo das permeabilidades efetivas à água e ao óleo (kw e ko) também
+ pode ser realizado usando a Lei de Darcy conforme Equações 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:krw"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:kro"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ [Rosa et al., 2006].
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+k_{rw}=\frac{k_{w}Lq_{w}}{A\triangle P}\label{eq:krw}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+k_{ro}=\frac{k_{o}Lq_{o}}{A\triangle P}\label{eq:kro}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A razão entre a permeabilidade efetiva de determinado uido no meio poroso
+ e a permeabilidade absoluta é denominada permeabilidade relativa (kr),
+ a qual pode ser representada pelas Equações 3.9 e 3.10 para um sistema bifásico
+ óleo-água.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{equation}
+k_{rw}=\frac{k_{w}}{k}\label{eq:krw/k}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{equation}
+k_{ro}=\frac{k_{o}}{k}\label{eq:kro/k}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este parâmetro sofre efeitos da variação da saturação dos fluidos, da molhabilid
+ade da rocha, da estrutura dos poros da rocha, da tensão de confinamento,
+ do teor de argila da rocha, da migração de finos, da temperatura, além
+ das variações de tensão interfacial, viscosidade e velocidade do fluxo
+ [Dandekar, 2013].
+ 
+\end_layout
+
+\begin_layout Standard
+O aumento da saturação de um fluido molhante no meio poroso em relação a
+ outro fluido chama-se de embebição, e, por outro lado, quando existe uma
+ redução de saturação do fluido que molha preferencialmente a rocha em relação
+ a outro fluido, tem-se uma drenagem [Donaldson et al., 1985].
+ Assim, no processo de embebição, é necessário que haja uma determinada
+ saturação da fase molhante no inicio do fluxo, chamada saturação de água
+ conata ou saturação irredutível (Swi).
+ Da mesma forma ocorre no processo de drenagem, e essa saturação é denominada
+ saturação de óleo residual (Sor).
+ A saturação da fase não molhante atinge seu valor máximo a saturações menores
+ que 100%, o que indica que nem todo o meio poroso interligado irá contribuir
+ ao uxo desta fase [Núñez, 2011].
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Mobilidade e Razão Mobilidade:
+\end_layout
+
+\begin_layout Standard
+Na lei de Darcy, há um fator de proporcionalidade relacionado à velocidade
+ de um fluido e ao gradiente de pressão.
+ Este fator de proporcionalidade, denominado mobilidade do fluido, é a permeabil
+idade efetiva da rocha à esse fluido, dividida pela viscosidade do mesmo
+ (CRAIG, F.F.,1971).
+ 
+\end_layout
+
+\begin_layout Standard
+Se três fluidos (óleo, água e gás) estiverem presentes no meio poroso as
+ suas mobilidades serão definidas, respectivamente, por: 
+\begin_inset Formula 
+\begin{equation}
+\lambda_{w}=\frac{k_{w}}{\mu_{w}},\label{eq:1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\lambda_{o}=\frac{k_{o}}{\mu_{o}},\label{eq:2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\lambda_{g}=\frac{k_{g}}{\mu_{g}},\label{eq:3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Muskat (1937) discutiu pela primeira vez o termo que ficou conhecido como
+ razão de mobilidade.
+ Posteriormente, foi usado para relacionar a mobilidade da água na porção
+ de uma injeção no contato água com a mobilidade do óleo no banco de óleo.
+ Ele apresentou as distribuições de pressão em regime permanente para uma
+ série de arranjos de poços de produção de injeção, isto é, sob condições
+ de uma razão de mobilidade unitária.
+ A razão de mobilidades (M) é a relação entre a mobilidade do fluido deslocante
+ 
+\begin_inset Formula $(\lambda_{d}$
+\end_inset
+
+) atrás da frente de avanço do mesmo e a mobilidade do fluido deslocado
+ no banco deste fluido.
+ Por exemplo, no caso do fluido deslocado ser o óleo a razão de mobilidades
+ é dada por : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M=\frac{k_{d}}{\mu_{d}}\frac{\mu_{o}}{k_{o}}=\frac{\lambda_{d}}{\lambda_{o}},\label{eq:3.1}
+\end{equation}
+
+\end_inset
+
+ onde o subscrito 
+\begin_inset Formula $d$
+\end_inset
+
+ denota a fase de deslocamento.
+ Na terminologia de injeção de água, isso se torna,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M=\frac{k_{w}}{\mu_{w}}\frac{\mu_{o}}{k_{o}}=\frac{k_{w}}{\mu_{w}}\frac{\mu_{o}}{k_{ro}},\label{eq:3.2}
+\end{equation}
+
+\end_inset
+
+ como a permeabilidade efetiva é função da saturação, a mobilidade também
+ é.
+\end_layout
+
+\begin_layout Standard
+É importante notar que as permeabilidades relativas à água e óleo na Eq.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:3.2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ são definidas em dois pontos separados no reservatório, ou seja, 
+\begin_inset Formula $k_{w}$
+\end_inset
+
+ é a permeabilidade relativa à água na parte do reservatório em contato
+ com a água (na parte invadida pela água) e 
+\begin_inset Formula $k_{o}$
+\end_inset
+
+ é a permeabilidade relativa ao óleo no banco de óleo (parte não invadida
+ do reservatório) (COBB; SMITH, 1997).
 \end_layout
 
 \begin_layout Itemize
