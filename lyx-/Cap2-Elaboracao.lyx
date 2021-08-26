@@ -303,7 +303,7 @@ Neste trabalho serão discutidos conceitos de razão mobilidade, condutividade,
 \end_layout
 
 \begin_layout Section
-Conceitos Teóricos
+Conceitos Fundamentais
 \end_layout
 
 \begin_layout Standard
@@ -315,7 +315,7 @@ imento de qualquer metodologia para aumentar o fator de recuperação do petról
 \end_layout
 
 \begin_layout Subsection
-Conceitos Fundamentais e Propriedades de Rochas e Fluidos
+Conceitos de Propriedades de Rochas e Fluidos
 \end_layout
 
 \begin_layout Itemize
@@ -940,12 +940,12 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../Desktop/UENF/8º Periodo/Hidrodinânica/Trabalho AARE HIdro/lyx/08-resultados-documentofinal-ic-msc-dsc/fig23.png
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/fig23.png
 
 \end_inset
 
@@ -1006,12 +1006,12 @@ noprefix "false"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../Desktop/UENF/8º Periodo/Hidrodinânica/Trabalho AARE HIdro/lyx/08-resultados-documentofinal-ic-msc-dsc/fig16.png
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/fig16.png
 	scale 50
 
 \end_inset
@@ -1090,12 +1090,12 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../Desktop/UENF/8º Periodo/Hidrodinânica/Trabalho AARE HIdro/lyx/08-resultados-documentofinal-ic-msc-dsc/fig17.png
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/fig17.png
 	scale 75
 
 \end_inset
@@ -1453,7 +1453,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../Desktop/UENF/8º Periodo/Hidrodinânica/Trabalho AARE HIdro/lyx/08-resultados-documentofinal-ic-msc-dsc/fig11.png
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/fig11.png
 	scale 75
 
 \end_inset
@@ -1495,7 +1495,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../Desktop/UENF/8º Periodo/Hidrodinânica/Trabalho AARE HIdro/lyx/08-resultados-documentofinal-ic-msc-dsc/fig12.png
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/fig12.png
 	scale 75
 
 \end_inset
@@ -1619,7 +1619,7 @@ com
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-q_{inj,i}=\frac{C_{1}h\lambda_{o}\triangle P}{log\left(\frac{re}{rf}\right)}.\label{eq:4.6}
+q_{inj,i}=\frac{C_{1}h\lambda_{o}\triangle(A_{inv})_{BT},P}{log\left(\frac{re}{rf}\right)}.\label{eq:4.6}
 \end{equation}
 
 \end_inset
@@ -1677,7 +1677,7 @@ noprefix "false"
 
 \end_inset
 
-) será um dor cálculos realizados pelo Software na análise do comportamento
+) será um dos cálculos realizados pelo Software na análise do comportamento
  areal.
  A injetividade relativa começa unitária quando 
 \begin_inset Formula $r_{f}=r_{w}$
@@ -1784,12 +1784,12 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../../../../Desktop/UENF/8º Periodo/Hidrodinânica/Trabalho AARE HIdro/lyx/08-resultados-documentofinal-ic-msc-dsc/fig18.png
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/fig18.png
 
 \end_inset
 
@@ -1843,7 +1843,7 @@ Para facilitar o entendimento da aplicação desse princípio, considere a
  Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Sistema-composto-coordenadas"
+reference "fig:Sistemas-de-coordenadas"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1872,10 +1872,46 @@ noprefix "false"
 
 \end_inset
 
- e fazer as manipulações matemáticas necessárias,a Eq.(................) permitem calcular
- a pressão em qualquer ponto do reservatório, em um tempo qualquer t.
- Conforme se observa, usando a aproximação de longo tempo (aproximação logarítmi
-ca da solução do modelo da fonte linear) para o comportamento transiente
+ e fazer as manipulações matemáticas necessárias, as Eqs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:p1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:p2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:p3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ permitem calcular a pressão em qualquer ponto do reservatório, em um tempo
+ qualquer t.
+ O Software desenvolvido irá calcular o valor das pressões para um ponto
+ (x,y) qualquer escolhido pelo usuário.
+\end_layout
+
+\begin_layout Standard
+Conforme se observa, usando a aproximação de longo tempo (aproximação logarítmic
+a da solução do modelo da fonte linear) para o comportamento transiente
  de pressão, Eq.
  
 \begin_inset CommandInset ref
@@ -1896,11 +1932,159 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/fig19.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema composto de um poço produtor e um injetores, em um sistema de coordenada
+s cartesianas.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema-composto2inj-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/fig47.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema composto de um poço produtor e de dois injetores, em um sistema
+ de coordenadas cartesianas.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema-composto2inj"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/fig50.png
+	scale 75
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema composto de um poço injetor e de dois produtores, em um sistema
+ de coordenadas cartesianas.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema-composto-de-2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistemas de coordenadas cartesianas.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistemas-de-coordenadas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Uma maneira de se analisar o comportamento da pressão (e consequentemente
  das linhas de fluxo) nos sistemas mostrados na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Sistema-composto-coordenadas"
+reference "fig:Sistema-composto-de-1"
 plural "false"
 caps "false"
 noprefix "false"
@@ -1911,18 +2095,38 @@ noprefix "false"
  das linhas de mesmo potencial (equipotenciais), já que neste caso o potencial
  de fluxo e a pressão do fluido são iguais, pois o fluxo é horizontal.
  Para se analisar o comportamento das linhas equipotenciais basta admitir
- que o lado direito da Eq.
+ que o lado direito das Eqs.
  
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "eq:14.23"
+reference "eq:p1"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- seja constante, isto é, considerar a situação em que o quociente entre
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:p2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:p3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ sejam constantes, isto é, considerar a situação em que o quociente entre
  as distâncias 
 \begin_inset Formula $r_{2}$
 \end_inset
@@ -1936,14 +2140,248 @@ e
 \end_inset
 
  seja constante (ROSA ET AL., 2006).
- Com isso obetemos : 
+ Com isso, após algumas manipulações, obtem-se as Eqs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:linha1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: linha2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:linha3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, que sarão origem a gráficos mostrando o comportamento dessas linhas de
+ pressão consntante ao redor dos poços de injeção e produção.
+\end_layout
+
+\begin_layout Standard
+Um outro aspecto de interesse é a determinação da área varrida pelo fluido
+ injetado até um determinado instante.
+ Por exemplo, no caso do esquema da Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema-composto-de-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, onde são mostradas as dimensões do sistema, é interessante saber qual
+ seria a área invadida pela água no momento que a água atingisse o poço
+ produtor (
+\begin_inset Quotes eld
+\end_inset
+
+breakthrough
+\begin_inset Quotes erd
+\end_inset
+
+) e, nesse instante, qual seria a distância percorrida pela água no sentido
+ oposto ao do poço produtor.
+ Para facilitar o desenvolvimento a ser apresentado, admita novamente um
+ sistema de coordenadas cartesianas, em que o eixo horizontal coincide com
+ a linha horizontal que passa pelos dois poços, como ilustrado na Figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Sistema-composto-de-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Para se analisar o comportamento do sistema no instante do “breakthrough”,
+ é conveniente admitir também que o eixo horizontal tem origem no poço injetor,
+ com valores de x crescentes para a direita neste caso, já que o poço injetor
+ encontra-se à esquerda do produtor (ROSA ET AL., 2006).
+ Com isso, obtém-se o valor da área invadida no instante do 
+\begin_inset Quotes eld
+\end_inset
+
+breakthrogh
+\begin_inset Quotes erd
+\end_inset
+
+ ( Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:14.19"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+) , 
+\begin_inset Formula $(A_{inv})_{BT},$
+\end_inset
+
+pode ser calculado pelas Eqs.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:area1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:area2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:area3"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, que serão também dados de saída do programa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align right
+\begin_inset Graphics
+	filename ../../../../Desktop/UENF/8º Periodo/Hidrodinânica/Trabalho AARE HIdro/lyx/08-resultados-documentofinal-ic-msc-dsc/fig24.png
+	scale 35
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sistema composto de dois poços: injetor e produtor (ROSA ET AL., 2006).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Sistema-composto-de-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/fig25.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Ilustração da área invadida pela água no instante de “breakthrough” em um
+ sistema composto de um injetor e de um produtor (ROSA ET AL., 2006)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:14.19"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Caso 1 : 
 \begin_inset Formula 
 \begin{equation}
-x^{4}+y^{4}+2x^{2}y^{2}+x^{2}R"-y^{2}R"=\frac{C^{2}R"}{2}\label{eq:3poco2}
+\frac{2\pi kh[p(x,y,t)-p_{i}]}{q\mu}=ln(r_{2}/r_{1}),\label{eq:p1}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+x^{4}+y^{4}+2x^{2}y^{2}+x^{2}R"-y^{2}R"=\frac{C^{2}R"}{2},\label{eq:linha1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(A_{inv})_{BT}=\frac{\pi C^{2}}{2}.\label{eq:area1}
 \end{equation}
 
 \end_inset
@@ -1953,9 +2391,20 @@ x^{4}+y^{4}+2x^{2}y^{2}+x^{2}R"-y^{2}R"=\frac{C^{2}R"}{2}\label{eq:3poco2}
 
 \begin_layout Itemize
 Caso 2 : 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-(x^{2}+y^{2})^{2}+(y^{2}-x^{2})R'=-\frac{C^{2}R'}{2}\label{eq:final}
+\frac{2\pi kh[p_{i}-p(x,y,t)]}{\mu q}=ln\left(\frac{r_{3}^{4}}{r_{1}^{2}r_{2}^{2}}\right)^{\frac{1}{4}},\label{eq:p2}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+(x^{2}+y^{2})^{2}+(y^{2}-x^{2})R'=-\frac{C^{2}R'}{2},\label{eq: linha2}
 \end{equation}
 
 \end_inset
@@ -1970,7 +2419,18 @@ Transformando em coordenadas polares,
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-r^{4}+r^{2}\left[(-cos(2\theta)\right]R'=-\frac{C^{2}R'}{2}\label{eq:POLAR}
+r^{4}+r^{2}\left[(-cos(2\theta)\right]R'=-\frac{C^{2}R'}{2},\label{eq:POLAR}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(A_{inv})_{BT}=2\pi C^{2}\label{eq:area2}
 \end{equation}
 
 \end_inset
@@ -1980,12 +2440,20 @@ r^{4}+r^{2}\left[(-cos(2\theta)\right]R'=-\frac{C^{2}R'}{2}\label{eq:POLAR}
 
 \begin_layout Itemize
 Caso 3 :
+\begin_inset Formula 
+\begin{equation}
+\frac{2\pi kh[p_{i}-p(x,y,t)]}{\mu q}=ln\left(\frac{r_{1}^{2}r_{2}^{2}}{r_{3}^{4}}\right)^{\frac{1}{4}}.\label{eq:p3}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-x^{4}+y^{4}+2x^{2}y^{2}+x^{2}R"-y^{2}R"=\frac{C^{2}R"}{2}.\label{eq:final2unj}
+x^{4}+y^{4}+2x^{2}y^{2}+x^{2}R"-y^{2}R"=\frac{C^{2}R"}{2}.\label{eq:linha3}
 \end{equation}
 
 \end_inset
@@ -1998,6 +2466,17 @@ Transformando em coordenadas polares,
 \[
 r^{4}-r^{2}\left[(sen^{2}(\theta)-cos^{2}(\theta)\right]R"=\frac{C^{2}R"}{2}
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(A_{inv})_{BT}=2\pi C^{2}\label{eq:area3}
+\end{equation}
 
 \end_inset
 
