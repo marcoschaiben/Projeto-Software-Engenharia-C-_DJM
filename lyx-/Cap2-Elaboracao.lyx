@@ -162,15 +162,6 @@ Análise de domínio
 \end_layout
 
 \begin_layout Standard
-Coelho (1991) afirmou que no processo de exploração e produção de uma reserva
- de hidrocarbonetos, suas características petrofísicas, geológicas, geofísicas
- e geoquímicas são fundamentais de entendimento para a eficiente recuperação.
- A qualidade de um reservatório esta diretamente ligado ao ambiente deposicional
- do mesmo, bem como aos processos diagenéticos que lhe deram origem.
- 
-\end_layout
-
-\begin_layout Standard
 As acumulações de petróleo possuem certa quantidade de energia, denominada
  energia primária.
  A grandeza dessa energia é determinada pelo volume e pela natureza dos
@@ -203,16 +194,23 @@ mente transferida para a jazida, ou por meios que tendem a tornar a energia
  primária mais eficiente.
  Os objetivos práticos básicos dos métodos de recuperação secundária são
  o aumento da eficiência de recuperação e a aceleração da produção (ROSA
- ET AL., 2006).
+ ET AL., 2006).De acordo com Coelho (1991) um processo de exploração e produção
+ de uma reserva de hidrocarbonetos, suas características petrofísicas, geológica
+s, geofísicas e geoquímicas são fundamentais de entendimento para a eficiente
+ recuperação.
+ A qualidade de um reservatório esta diretamente ligado ao ambiente deposicional
+ do mesmo, bem como aos processos diagenéticos que lhe deram origem.
+ 
 \end_layout
 
 \begin_layout Standard
 Em um projeto de injeção de fluidos a escolha do esquema de injeção - distribuiç
 ão dos poços de injeção e produção - é fundamental, pois o sucesso aumenta
  à medida que certas linhas básicas de procedimento são adotadas ao se fazer
- essa escolha.Como o objetivo primordial da injeção é o aumento da recuperação
- de petróleo, deve-se tentar produzir esse volume adicional desejado utilizando-
-se esquemas em que os volumes de fluidos injetados sejam os menores possíveis.
+ essa escolha.
+ Como o objetivo primordial da injeção é o aumento da recuperação de petróleo,
+ deve-se tentar produzir esse volume adicional desejado utilizando-se esquemas
+ em que os volumes de fluidos injetados sejam os menores possíveis.
  Devem ser buscadas situações em que a maior quantidade de fluido injetado
  permaneça no interior do reservatório, ou seja, a produção do fluido injetado
  seja a menor possível.
@@ -241,37 +239,6 @@ A teoria do avanço frontal é usada para calcular a vazão dos poços em esquem
 \end_layout
 
 \begin_layout Standard
-Olhando para esses campos, tanto a injeção quanto a produção ocorrem em
- pontos.
- Se os padrões forem simétricos, o caminho de viagem mais curto e o maior
- gradiente de pressão ocorrerão ao longo de uma linha reta entre os produtores
- e os injetores.
- Consequentemente, a água injetada que viaja ao longo desta linha de fluxo
- chegará primeiro aos poços produtores.
- A água que trafega por linhas mais longas não terá atingido o poço produtor
- no momento do 
-\begin_inset Quotes eld
-\end_inset
-
-breakthrough
-\begin_inset Quotes erd
-\end_inset
-
- e, consequentemente, parte do reservatório não terá sido contatada pela
- água naquele momento.
- Aquela fração de um padrão de injeção de água que foi contatada pela água
- em um determinado momento durante uma injeção é chamada de eficiência de
- varredura de padrão ou eficiência de varredura de área.
- Tecnicamente, a eficiência da varredura padrão deve ser usada quando se
- refere às aplicações de campo, e a eficiência da varredura da área só deve
- ser usada quando se refere aos resultados dos estudos do modelo.
- Em geral, a eficiência da varredura da área dependerá da razão de mobilidade,
- da configuração geométrica do padrão de injeção, das heterogeneidades do
- reservatório e da quantidade de água injetada na área do padrão (SMITH,
- COBB , 1997).
-\end_layout
-
-\begin_layout Standard
 Quando se trata de um reservatório heterogêneo as taxas energéticas de sedimenta
 ção influenciam diretamente na seleção dos grãos.
  Em geral, ambientes de deposição com alta energia, geram reservatórios
@@ -297,9 +264,9 @@ A heterogeneidade do reservatório provavelmente tem mais influência do que
 
 \begin_layout Standard
 Neste trabalho serão discutidos conceitos de razão mobilidade, condutividade,
- esquemas de injeções em malhas, linhas de fluxo e de pressão, a área invadida
- pela água, bem como a eficiência do varrido horizontal em reservatórios
- homogênios.
+ fluxo fracionário, esquemas de injeções em malhas, linhas de fluxo e de
+ pressão, a área invadida pela água, bem como a eficiência do varrido horizontal
+ e vertical em reservatórios homogêneos e heterogêneos 
 \end_layout
 
 \begin_layout Section
@@ -382,6 +349,160 @@ noprefix "false"
 \begin_inset Formula 
 \begin{equation}
 V_{t}=V_{p}+V_{sólida}\label{eq:volumeTotal}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Conservação de Massas: 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+A equação da continuidade é desenvolvida efetuand-se um balanço de massas
+ sobre um elemento de volume 
+\begin_inset Formula $\Delta x\Delta y\Delta z,$
+\end_inset
+
+fixo no espaço, através do qual um fluido está escoando (Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:elementodemassa"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+).
+ Pelo Princípio da Conservação das Massas, pode-se dizer que ao longo de
+ um determinado intervalo de tempo, a massa de água que entra num determinado
+ sistema subtraído da massa que sai, será igual ao acúmulo de massa dentro
+ do sistema.
+ (BIRD;LIFHFOOT, STEWART, 1987)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/elementodevolume.jpeg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Balanço de Massas (Autor)
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:elementodemassa"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial(\rho_{j}S_{j}\phi)}{\partial t}=-\nabla\cdot\left(\rho_{j}\mathbf{u}\right)\label{eq:equacaoconcentracaoglobal}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+sendo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\nabla\cdot\left(\rho\mathbf{u}\right)=\frac{\partial\left(\rho u_{x}\right)}{\partial x}+\frac{\partial\left(\rho u_{y}\right)}{\partial y}+\frac{\partial\left(\rho u_{z}\right)}{\partial z}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Equação de Buckey Levet
+\end_layout
+
+\begin_layout Standard
+Para definição da Equação de Buckey-Levett, vamos determinar as seguintes
+ premissas:
+\end_layout
+
+\begin_layout Itemize
+Fluxo 1D, horizontal, Isotérmico;
+\end_layout
+
+\begin_layout Itemize
+Meio Poroso Homogêneo e incompressível (porosidade e permeabilidade cte);
+\end_layout
+
+\begin_layout Itemize
+Fases imiscíveis, incompressíveis e viscosidade constante;
+\end_layout
+
+\begin_layout Itemize
+Sem reações químicas e adsorção;
+\end_layout
+
+\begin_layout Standard
+Obtêm-se:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{equation}
+\text{Equação de Buckey-Leverett: }\phi\frac{\partial(S_{j})}{\partial t}+\frac{\partial(u_{jx})}{\partial x}=0\label{eq:Equação de Buckey Leveret}
 \end{equation}
 
 \end_inset
@@ -507,19 +628,25 @@ k=\frac{q\mu L}{A\triangle P}\label{eq:k}
 Sendo:
 \end_layout
 
-\begin_layout Standard
-K = Permeabilidade 
+\begin_layout Itemize
+\begin_inset Formula $k$
+\end_inset
+
+ = Permeabilidade 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 A = Área da seção transversal
 \end_layout
 
-\begin_layout Standard
-m = Viscosidade
+\begin_layout Itemize
+\begin_inset Formula $\mu$
+\end_inset
+
+ = Viscosidade
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 L = Comprimento do meio poroso
 \end_layout
 
@@ -793,6 +920,94 @@ noprefix "false"
 
 \begin_layout Subsection
 Conceitos Teóricos: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Fluxo Fracionário:
+\end_layout
+
+\begin_layout Standard
+O fluxo fracionário de um fluido é interpretado como o quociente entre a
+ taxa de fluxo desse fluido e a taxa total de fluxo.
+ Assim, o fluxo fracionário da água, 
+\begin_inset Formula $f_{w}$
+\end_inset
+
+, do óleo, 
+\begin_inset Formula $f_{o}$
+\end_inset
+
+e o total, 
+\begin_inset Formula $f_{t}$
+\end_inset
+
+são definidos, respectivamente, pelas Equações 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:fluxofracionarioagua"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ , 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:fluxofracionariooleo"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:fluxofracionariototal"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ (ROSA, 2006).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{w}=\frac{u_{w}}{ut}\label{eq:fluxofracionarioagua}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{o}=\frac{u_{o}}{ut}\label{eq:fluxofracionariooleo}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{t}=f_{w}+f_{o}\label{eq:fluxofracionariototal}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1163,47 +1378,220 @@ A dimensão da área invadida e, consequentemente, a eficiência de varrido
  de fluxo, que será mostrado a seguir (ROSA ET AL., 2006).
 \end_layout
 
-\begin_layout Section
-Formulações 
-\end_layout
-
-\begin_layout Subsection
-TITULO JULIA: 
-\end_layout
-
-\begin_layout Subsection
+\begin_layout Itemize
 
 \series bold
-Título: DAVID
+Modelo de Corey-Brooks:
 \end_layout
 
 \begin_layout Standard
-Dada uma perspectiva particular de injeção num reservatório heterogêneo,
- pretende-se prever informações como o tempo necessário para o “breakthrough”,
- recuperação de óleo no “breakthrough”, tempo de produção, desempenho de
- produção de óleo com a injeção de água, etc.
- Vários métodos foram propostos para fazer isso, cada um diferindo na maneira
- de lidar com a heterogeneidade, cálculos de varredura, desempenho de injeção
- de água, eficiência do deslocamento e muitas outras variáveis que podem
- afetar a desempenho de injeção (SMITH; COBB, 1997).
- Como dito na especificação, será analisada a previsão de desempenho num
- reservatório com múltiplas camadas, com base nos métodos de Stiles (1949)
- e Dykstra-Parsons(1950), as formulações para tal são definidas a seguir:
+A Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Modelo Corey-Brooks"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ mostra os valores de permeabilidade relativa para todo o intervalo de valores
+ de saturação de água.
+ É possível observar que à medida que a saturação de água diminui, a sua
+ permeabilidade efetiva cai de forma sensível no início.
+ Considerando que o meio poroso em estudo é molhável a água, essa situação
+ já era esperada, visto que o óleo irá ocupar inicialmente uma região de
+ maior diâmetro no centro dos capilares.
+ A tendência natural é que a saturação de óleo cresça até atingir a saturação
+ crítica e começar a fluir e em consequência, a saturação de água começará
+ a diminuir de forma mais significativa(Rosa et al, 2016).
+\end_layout
+
+\begin_layout Standard
+O crescimento da saturação de óleo é diretamente proporcional ao da sua
+ permeabilidade relativa.
+ Enquanto isso, a permeabilidade relativa da água descrece até que seja
+ atingido o ponto de saturação irredutível de água(
+\begin_inset Formula $S_{wi}$
+\end_inset
+
+), em que ela parará de fluir , logo , sua permeabilidade relativa será
+ nula.
  
 \end_layout
 
 \begin_layout Standard
-Considerando o Método de Stiles, temos que:
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/Modelo de Corey-Brooks -Permeabilidade Rel.png
+	lyxscale 50
+	width 15cm
+	height 15cm
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-Posição da frante de avanço da água numa cada i qualquer (i > j):
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Modelo de Corey-Brooks para permeabilidade relativa(Autor).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "Modelo Corey-Brooks"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A partir do modelo de Corey-Brooks para permeabilidade relativa e pressão
+ capilar, temos as seguintes relações:
+\begin_inset Formula 
+\begin{equation}
+k_{rw}(S_{w})=(k_{rw})_{s_{orw}}\left(\frac{S_{w}-S_{wi}}{1-S_{wi}-S_{orw}}\right)^{ew}\label{eq:permeabilidade relativa agua}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-X_{i}=X_{j}\left(\frac{k_{i}}{k_{j}}\right)
+k_{ro}(S_{w})=(k_{ro})_{s_{wi}}\left(\frac{1-S_{w}-S_{orw}}{1-S_{wi}-S_{orw}}\right)^{eow}\label{eq:permeabilidade relativa oleo}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P_{c}(S_{w})=(P_{c})_{s_{wi}}\left(\frac{1-S_{w}-S_{orw}}{1-S_{wi}-S_{orw}}\right)^{epcow}\label{eq:pressao capilar}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+sendo 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $k_{rw}=$
+\end_inset
+
+permeabilidade relativa na água, 
+\begin_inset Formula $k_{ro}=$
+\end_inset
+
+permeabilidade relativa na óleo, 
+\begin_inset Formula $(k_{rw})_{s_{orw}}=$
+\end_inset
+
+permeabilidade relativa na água na saturação de óleo residual , 
+\begin_inset Formula $(k_{rw})_{s_{wi}}=$
+\end_inset
+
+permeabilidade relativa da água na saturação de agua irredutivel , 
+\begin_inset Formula $S_{w}=$
+\end_inset
+
+Saturação de água, 
+\begin_inset Formula $S_{wi}=$
+\end_inset
+
+Saturação de água irredutível, 
+\begin_inset Formula $S_{orw}=$
+\end_inset
+
+Saturação de óleo residual , 
+\begin_inset Formula $P_{c}=$
+\end_inset
+
+pressão capilar , ew,eow e epcow= constantes experimentais de Corey-Brooks
+ .
+ 
+\end_layout
+
+\begin_layout Section
+Formulações Matemáticas
+\end_layout
+
+\begin_layout Subsection
+Modelo de Fluxo Bifásido (1D)
+\end_layout
+
+\begin_layout Standard
+Posteriormente as suposições básicas, o assunto é introduzido da maneira
+ convencional, descrevendo a equação fluxo e a equação de Buckley-Leverett.
+ Por ser unidimensional, sua aplicação direta, no cálculo da recuperação
+ de óleo, ficaria restrita à distribuição da saturação de água uniforme
+ em relação ao comprimento.
+ Mediante ao fato de que há uma distribuição de saturação não uniforme,
+ utilizou-se o modelo de Corey-Brooks para permeabilidades relativas, que
+ são funções da saturação de água e foi obtida uma solução para o problema
+ de Riemann e de Goursat-Riemann para uso em conjunto com a teoria de Buckley-Le
+verett(DAKE,1978).
+\end_layout
+
+\begin_layout Itemize
+Equação de Buckey Leverett
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{equation}
+\phi\frac{\partial(S_{j})}{\partial t}+\frac{\partial(u_{jx})}{\partial x}=0\label{eq:Equação de Buckey Leveret-1}
 \end{equation}
 
 \end_inset
@@ -1212,13 +1600,13 @@ X_{i}=X_{j}\left(\frac{k_{i}}{k_{j}}\right)
 \end_layout
 
 \begin_layout Itemize
-Vazão de injeção numa camada j:
+Lei de Darcy
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-q_{j}=q_{w}=q_{o}=\frac{k_{w}A_{j}\triangle p}{\mu_{w}L}=\frac{k_{o}A_{j}\triangle p}{\mu_{o}L}
+u_{\pi}=-k\frac{k_{r\pi}}{\mu_{\pi}}\left(\frac{\partial P_{\pi}}{\partial x}-\rho_{\pi}gsen\alpha\right)\label{eq:Lei de Darcy}
 \end{equation}
 
 \end_inset
@@ -1227,13 +1615,13 @@ q_{j}=q_{w}=q_{o}=\frac{k_{w}A_{j}\triangle p}{\mu_{w}L}=\frac{k_{o}A_{j}\triang
 \end_layout
 
 \begin_layout Itemize
-Volume de óleo produzido por camada em condições padrão: 
+Velocidade de deslocamento do óleo
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-N_{pi}=\frac{V_{pi}(1-S_{w}-S_{or})}{Bo}=\frac{WX_{i}h_{i}\phi(1-S_{w}-S_{or})}{Bo}
+u_{o}=-k\frac{k_{ro}}{\mu_{o}}\left(\frac{\partial P_{o}}{\partial x}-\rho_{o}gsen\alpha\right)\label{eq:velocidade do oleo}
 \end{equation}
 
 \end_inset
@@ -1242,47 +1630,26 @@ N_{pi}=\frac{V_{pi}(1-S_{w}-S_{or})}{Bo}=\frac{WX_{i}h_{i}\phi(1-S_{w}-S_{or})}{
 \end_layout
 
 \begin_layout Itemize
-Volume de óleo produzido em toda a malha em condições padrão:
+Velocidade de deslocamento da água
 \end_layout
 
 \begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \begin_inset Formula 
 \begin{equation}
-N_{p}=\frac{V_{p}(1-S_{w}-S_{or})}{Bo}E_{v}=\frac{WLh_{t}\phi(1-S_{w}-S_{or})}{Bo}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Considerando o Método de Dykstra-Parsons, temos que:
-\end_layout
-
-\begin_layout Itemize
-Posição da frante de avanço da água numa cada i qualquer (i > j):
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-X_{i}=L\left[\frac{M-\sqrt{M^{2}+(1-M^{2})\frac{k_{i}}{k_{j}}}}{M-1}\right]
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-A eficiência do varrido vertical é definida matematicamente como: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-E_{v}=\frac{\stackrel[i=l]{n}{\sum}X_{i}h_{i}}{Lh_{t}}
+u_{w}=-k\frac{k_{rw}}{\mu_{w}}\left(\frac{\partial P_{w}}{\partial x}-\rho_{w}gsen\alpha\right)\label{eq:velocidade da água}
 \end{equation}
 
 \end_inset
@@ -1291,14 +1658,26 @@ E_{v}=\frac{\stackrel[i=l]{n}{\sum}X_{i}h_{i}}{Lh_{t}}
 \end_layout
 
 \begin_layout Itemize
-A vazão de injeção em cada camada como sendo dependente da razão de mobilidade
- M e posição X:
+Função Fluxo
 \end_layout
 
 \begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \begin_inset Formula 
 \begin{equation}
-(Q_{inj})_{i}=\frac{k_{i}k_{rw}A\triangle p}{B_{w}\mu_{w}[X_{i}+M(L-X_{i})]}
+u_{t}=-k\frac{k_{rw}}{\mu_{w}}\left(\frac{\partial P_{w}}{\partial x}-\rho_{w}gsen\alpha\right)-k\frac{k_{ro}}{\mu_{o}}\left(\frac{\partial P_{o}}{\partial x}-\rho_{o}gsen\alpha\right)\label{Velocidade total}
 \end{equation}
 
 \end_inset
@@ -1307,13 +1686,13 @@ A vazão de injeção em cada camada como sendo dependente da razão de mobilida
 \end_layout
 
 \begin_layout Itemize
-Volume de óleo produzido por camada em condições padrão: 
+Pressão Capilar
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-N_{pi}=\frac{V_{pi}(1-S_{w}-S_{or})}{Bo}=\frac{WX_{i}h_{i}\phi(1-S_{w}-S_{or})}{Bo}
+P_{c}=P_{o}-P_{w}\label{eq:Pressão capilar}
 \end{equation}
 
 \end_inset
@@ -1322,13 +1701,26 @@ N_{pi}=\frac{V_{pi}(1-S_{w}-S_{or})}{Bo}=\frac{WX_{i}h_{i}\phi(1-S_{w}-S_{or})}{
 \end_layout
 
 \begin_layout Itemize
-Volume de óleo produzido em toda a malha em condições padrão:
+Derivada da Função Fluxo
 \end_layout
 
 \begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \begin_inset Formula 
 \begin{equation}
-N_{p}=\frac{V_{p}(1-S_{w}-S_{or})}{Bo}E_{v}=\frac{WLh_{t}\phi(1-S_{w}-S_{or})}{Bo}
+\frac{du_{w}}{dS_{w}}=u_{t}\frac{d}{dS_{w}}\left(\frac{\lambda_{w}}{\lambda_{t}}\right)+gsen\alpha\left(\rho_{w}-\rho_{o}\right)\frac{d}{dS_{w}}\left(\frac{\lambda_{w}\lambda_{o}}{\lambda_{t}}\right)+\frac{d}{dS_{w}}\left(\frac{\lambda_{w}\lambda_{o}}{\lambda_{t}}\frac{\partial P_{c}}{\partial x}\right)
 \end{equation}
 
 \end_inset
@@ -1337,9 +1729,7 @@ N_{p}=\frac{V_{p}(1-S_{w}-S_{or})}{Bo}E_{v}=\frac{WLh_{t}\phi(1-S_{w}-S_{or})}{B
 \end_layout
 
 \begin_layout Subsection
-
-\series bold
-TITULO: MARCOS
+Modelo de Fluxo Bifásido Areal (2D)
 \end_layout
 
 \begin_layout Itemize
@@ -2517,126 +2907,177 @@ R''=\frac{2C^{2}}{R^{-1}-1}.
 
 \end_layout
 
-\begin_layout Section
-Identificação de pacotes – assuntos
+\begin_layout Subsection
+Modelo de Fluxo Bifásido em Sistemas Estratificados (3D)
 \end_layout
 
 \begin_layout Standard
-...aqui...
-\end_layout
-
-\begin_layout Itemize
-Nome Pacote: Descrição.
- O que é, para que serve, como se relaciona com os demais pacotes.
-\end_layout
-
-\begin_layout Itemize
-Nome Pacote: Descrição.
- O que é, para que serve, como se relaciona com os demais pacotes.
-\end_layout
-
-\begin_layout Itemize
-Nome Pacote: Descrição.
- O que é, para que serve, como se relaciona com os demais pacotes.
-\end_layout
-
-\begin_layout Section
-O que é o diagrama de pacotes
-\emph on
-
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Diagrama de pacotes
-\end_layout
-
-\end_inset
-
-
-\emph default
- – assuntos
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-assuntos
-\end_layout
-
-\end_inset
-
-
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-módulos
-\end_layout
-
-\end_inset
-
-
-\emph on
-
-\begin_inset Index idx
-status open
-
-\begin_layout Plain Layout
-Diagrama de pacotes (assuntos)
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:diagrama de assuntos-pacotes"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Um diagrama de pacotes é útil para mostrar as dependências entre as diversas
- partes do sistema; pode incluir: sistemas, subsistemas, hierarquias de
- classes, classes, interfaces, componentes, nós, colaborações e casos de
- uso.
-\end_layout
-
-\begin_layout Standard
-O exemplo da Figura 
+Dada uma perspectiva particular de injeção num reservatório heterogêneo
+ (Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Diagrama-de-Pacotes"
+reference "fig:Reservatório-Estratificado-(SMIT"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
- apresenta um diagrama de pacotes para um sistema de métodos numéricos.
- Observe que o diagrama de pacotes inclui um pacote bibliotecas, o qual
- é dividido em bibliotecas matemáticas, de estatística e de simulação.
- A seguir o componente biblioteca de simulação será detalhado.
+), pretende-se prever informações como o tempo necessário para o “breakthrough”,
+ recuperação de óleo no “breakthrough”, tempo de produção, desempenho de
+ produção de óleo com a injeção de água, etc.
+ Vários métodos foram propostos para fazer isso, cada um diferindo na maneira
+ de lidar com a heterogeneidade, cálculos de varredura, desempenho de injeção
+ de água, eficiência do deslocamento e muitas outras variáveis que podem
+ afetar a desempenho de injeção (SMITH; COBB, 1997).
+ Como dito na especificação, será analisada a previsão de desempenho num
+ reservatório com múltiplas camadas, com base nos métodos de Stiles (1949)
+ e Dykstra-Parsons(1950), as formulações para tal são definidas a seguir:
  
 \end_layout
 
-\begin_layout Section
-Diagrama de pacotes – assuntos
+\begin_layout Standard
+Considerando o Método de Stiles, temos que:
+\end_layout
+
+\begin_layout Itemize
+Posição da frante de avanço da água numa cada i qualquer (i > j):
 \end_layout
 
 \begin_layout Standard
-...aqui...
-\end_layout
-
-\begin_layout Standard
-coloque aqui texto falando do diagrama de pacotes, referencie a figura.
- Veja Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Diagrama-de-Pacotes"
+\begin_inset Formula 
+\begin{equation}
+X_{i}=X_{j}\left(\frac{k_{i}}{k_{j}}\right)
+\end{equation}
 
 \end_inset
 
-.
+
+\end_layout
+
+\begin_layout Itemize
+Vazão de injeção numa camada j:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+q_{j}=q_{w}=q_{o}=\frac{k_{w}A_{j}\triangle p}{\mu_{w}L}=\frac{k_{o}A_{j}\triangle p}{\mu_{o}L}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Volume de óleo produzido por camada em condições padrão: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N_{pi}=\frac{V_{pi}(1-S_{w}-S_{or})}{Bo}=\frac{WX_{i}h_{i}\phi(1-S_{w}-S_{or})}{Bo}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Volume de óleo produzido em toda a malha em condições padrão:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N_{p}=\frac{V_{p}(1-S_{w}-S_{or})}{Bo}E_{v}=\frac{WLh_{t}\phi(1-S_{w}-S_{or})}{Bo}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Considerando o Método de Dykstra-Parsons, temos que:
+\end_layout
+
+\begin_layout Itemize
+Posição da frante de avanço da água numa cada i qualquer (i > j):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X_{i}=L\left[\frac{M-\sqrt{M^{2}+(1-M^{2})\frac{k_{i}}{k_{j}}}}{M-1}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A eficiência do varrido vertical é definida matematicamente como: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+E_{v}=\frac{\stackrel[i=l]{n}{\sum}X_{i}h_{i}}{Lh_{t}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A vazão de injeção em cada camada como sendo dependente da razão de mobilidade
+ M e posição X:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(Q_{inj})_{i}=\frac{k_{i}k_{rw}A\triangle p}{B_{w}\mu_{w}[X_{i}+M(L-X_{i})]}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Volume de óleo produzido por camada em condições padrão: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N_{pi}=\frac{V_{pi}(1-S_{w}-S_{or})}{Bo}=\frac{WX_{i}h_{i}\phi(1-S_{w}-S_{or})}{Bo}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Volume de óleo produzido em toda a malha em condições padrão:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N_{p}=\frac{V_{p}(1-S_{w}-S_{or})}{Bo}E_{v}=\frac{WLh_{t}\phi(1-S_{w}-S_{or})}{Bo}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2648,7 +3089,106 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/AnaliseDeDominio.png
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/WhatsApp Image 2021-08-26 at 18.43.59.jpeg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Reservatório Estratificado (SMITH, COBB , 1997).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Reservatório-Estratificado-(SMIT"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Diagrama de Pacotes – assuntos
+\end_layout
+
+\begin_layout Standard
+Com base na análise do domínio do software desenvolvivo, foram identificadps
+ ps seguintes pacotes: 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Propriedades da Rocha e dos fluidos:
+\series default
+ é um pacote que possui os dados das propriedades da rocha e dos fuidos,
+ que compõem o meio poroso.
+ Sua função é fornecer estas propriedades para o modelo de recuperação;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Métodos de Deslocamento Imiscivel 1D, 2D e 3D: 
+\series default
+é um pacote que contém diferentes métodos de deslocamentos por fluidos imiscívei
+s;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Recuperação Secundária: 
+\series default
+é um pacote que envolve a injeção de água como método de recuperação;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Gnuplot: 
+\series default
+envolve um utilitário de criação de gráficos orientado por linha de comando
+ multi-plataforma;
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Engenharia de Reservatório: 
+\series default
+é um ramo da engenharia que fornece um estudo específico para fluxo em meios
+ porosos em rochas reservatório.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Marcos Chaiben/iCloudDrive/9º Periodo/Programação Prática C++/Diagrama de pacotes.png
 	width 100text%
 
 \end_inset
@@ -2678,22 +3218,6 @@ name "fig:Diagrama-de-Pacotes"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \end_body
