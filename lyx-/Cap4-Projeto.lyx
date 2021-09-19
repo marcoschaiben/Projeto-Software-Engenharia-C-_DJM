@@ -146,7 +146,7 @@ thechapter - Projeto}
 
 \begin_layout Standard
 Neste capítulo do projeto de engenharia veremos questões associadas ao projeto
- do sistema, incluindo protocolos, recursos, plataformas suportadas, inplicações
+ do sistema, incluindo protocolos, recursos, plataformas suportadas, implicações
  nos diagramas feitos anteriormente, diagramas de componentes e implantação.
  Na segunda parte revisamos os diagramas levando em conta as decisões do
  projeto do sistema.
@@ -174,8 +174,8 @@ name "sec:Projeto-do-sistema"
 \end_layout
 
 \begin_layout Standard
-Depois da análise orientada a objeto desenvolve-se o projeto do sistema,
- qual envolve etapas como a definição dos protocolos, da interface API,
+Depois da análise orientada ao objeto desenvolve-se o projeto do sistema,
+ o qual envolve etapas como a definição dos protocolos, da interface API,
  o uso de recursos, a subdivisão do sistema em subsistemas, a alocação dos
  subsistemas ao hardware e a seleção das estruturas de controle, a seleção
  das plataformas do sistema, das bibliotecas externas, dos padrões de projeto,
@@ -190,21 +190,7 @@ Deve-se definir padrões de documentação, padrões para o nome das classes,
  
 \end_layout
 
-\begin_layout Standard
-Segundo 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "prog-UML-Rumbaugh,prog-UML-blaha"
-literal "true"
-
-\end_inset
-
-, o projeto do sistema é a estratégia de alto nível para resolver o problema
- e elaborar uma solução.
- Você deve se preocupar com itens como: 
-\end_layout
-
-\begin_layout Enumerate
+\begin_layout Description
 Protocolos
 \begin_inset Index idx
 status collapsed
@@ -216,85 +202,27 @@ Protocolos
 \end_inset
 
 
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Definição dos protocolos de comunicação entre os diversos elementos externos
- 
-\begin_inset Newline newline
-\end_inset
-
-(como dispositivos).
- Por exemplo: se o sistema envolve o uso dos nós de um cluster, devem ser
- considerados aspectos como o protocolo de comunicação entre os nós do cluster.
-\begin_inset Separator latexpar
-\end_inset
-
-
+A única intercomunicação será entra o software desenvolvido e o software
+ Gnuplot, que plotará os gráficos desejados pelo usuário;
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+O software receberá dados via teclado; 
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
-Definição dos protocolos de comunicação entre os diversos elementos internos
- 
-\begin_inset Newline newline
-\end_inset
-
-(como objetos).
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
+A interface utilizada será em modo texto; 
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+O softwate terá como saída arquivos de extensão .txt e gráficos em arquivos
+ de extensão .png.
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-Definição da interface API de suas bibliotecas e sistemas.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Definição do formato dos arquivos gerados pelo software.
- Por exemplo: prefira formatos abertos, como arquivos txt e xml.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
+\begin_layout Description
 Recursos
 \begin_inset Index idx
 status collapsed
@@ -312,59 +240,12 @@ Recursos
 
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Identificação e alocação dos recursos globais, como os recursos do sistema
- serão alocados, utilizados, compartilhados e liberados.
- Implicam modificações no diagrama de componentes.
-\begin_inset Separator latexpar
-\end_inset
-
-
+O presente programa precisara utilizar o HD, o processador, o teclado, a
+ tela, o mouse, a memória e demais componentes internos do computador;
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Identificação da necessidade do uso de banco de dados.
- Implicam em modificações nos diagramas de atividades e de componentes.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Identificação da necessidade de sistemas de armazenamento de massa.
- Por exemplo: um 
-\emph on
-storage
-\emph default
- em um sistema de cluster ou sistemas de backup.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
+\begin_layout Description
 Controle
 \begin_inset Index idx
 status collapsed
@@ -376,97 +257,23 @@ Controle
 \end_inset
 
 
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Identificação e seleção da implementação de controle, seqüencial ou concorrente,
- baseado em procedimentos ou eventos.
- Implicam modificações no diagrama de execução.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
+Não haverá necessidade de grande espaco na memória visto que o programa
+ e seus componentes trabalham com dados relativamente pequenos;
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Neste projeto a maioria dos cálculos necessitam de estruturas de repetição;
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
-Identificação das condições extremas e de prioridades.
-\begin_inset Separator latexpar
-\end_inset
-
-
+Neste projeto não há necessidade de uso de processos de processamento paralelo,
+ pois os cálculos realizados requerem pouco esforço de processamento;
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Identificação da necessidade de otimização.
- Por exemplo: prefira sistemas com grande capacidade de memória; prefira
- vários hds pequenos a um grande.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Identificação e definição de 
-\emph on
-loops
-\emph default
- de controle e das escalas de tempo.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Identificação de concorrências – quais algoritmos podem ser implementados
- usando processamento paralelo.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
+\begin_layout Description
 Plataformas
 \begin_inset Index idx
 status collapsed
@@ -486,134 +293,27 @@ Plataformas
 
 \begin_deeper
 \begin_layout Itemize
-Identificação das estruturas arquitetônicas comuns.
+Para a geração de gráficos sera utilizado o software livre Gnuplot.
  
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
-\begin_deeper
 \begin_layout Itemize
-Neste projeto blablabla
+Os ambientes de desenvolvimento serão o Embarcadero DevC++ (Windows) e Kate
+ (Linux);
 \end_layout
 
-\end_deeper
 \begin_layout Itemize
-Identificação de subsistemas relacionados à plataforma selecionada.
- Podem implicar em modificações no diagrama de pacotes e no diagrama de
- componentes.
+O software irá operar nos sistemas operacionais Windows e GNU/Linux, sendo
+ desenvolvido e testado em ambos os sistemas.
+\end_layout
+
+\begin_layout Itemize
+Não haverá necessidade de grandes mudanças para tornar o programa multiplataform
+a pois a linguagem escolhida, C++, tem suporte em todos estes sistemas operacion
+ais, [Bueno, 2003].
  
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Identificação e definição das plataformas a serem suportadas: hardware,
- sistema operacional e linguagem de software.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Seleção das bibliotecas externas a serem utilizadas.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Seleção da biblioteca utilizada para montar a interface gráfica do software
- – GDI.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Seleção do ambiente de desenvolvimento para montar a interface de desenvolviment
-o – IDE.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
-Padrões de projeto
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Normalmente os padrões de projeto são identificados e passam a fazer parte
- de uma biblioteca de padrões da empresa.
- Mas isto só ocorre após a realização de diversos projetos.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-se um item não for pertinente; pode ser retirado; ,mas somente na versão
- final; isto facilita o trabalho de revisão do trabalho!!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Section
 Projeto orientado a objeto – POO
@@ -650,7 +350,7 @@ name "sec:Projeto-orientado-a-objeto"
 O projeto orientado a objeto é a etapa posterior ao projeto do sistema.
  Baseia-se na análise, mas considera as decisões do projeto do sistema.
  Acrescenta a análise desenvolvida e as características da plataforma escolhida
- (hardware, sistema operacional e linguagem de softwareção).
+ (hardware, sistema operacional e linguagem de programação).
  Passa pelo maior detalhamento do funcionamento do software, acrescentando
  atributos e métodos que envolvem a solução de problemas específicos não
  identificados durante a análise.
@@ -664,13 +364,8 @@ Envolve a otimização da estrutura de dados e dos algoritmos, a minimização
 \end_layout
 
 \begin_layout Standard
-Exemplo: na análise você define que existe um método para salvar um arquivo
- em disco, define um atributo nomeDoArquivo, mas não se preocupa com detalhes
- específicos da linguagem.
- Já no projeto, você inclui as bibliotecas necessárias para acesso ao disco,
- cria um objeto específico para acessar o disco, podendo, portanto, acrescentar
- novas classes àquelas desenvolvidas na análise.
- 
+Como o projeto não alterou os diagramas apresentados na análise orientada
+ a objeto, não houve necessidade de descrever os ítens abaixo relacionados:
 \end_layout
 
 \begin_layout Subsubsection
@@ -691,53 +386,9 @@ name "subsec:Efeito-do-projeto-no-modelo-estrutural"
 
 \end_inset
 
-
+;
 \end_layout
 
-\begin_layout Itemize
-Adicionar nos diagramas de pacotes as bibliotecas e subsistemas selecionados
- no projeto do sistema (exemplo: a biblioteca gráfica selecionada).
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Novas classes e associações oriundas das bibliotecas selecionadas e da linguagem
- escolhida devem ser acrescentadas ao modelo.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Estabelecer as dependências e restrições associadas à plataforma escolhida.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
 \begin_layout Subsubsection
 Efeitos do projeto no modelo
 \begin_inset Index idx
@@ -756,40 +407,9 @@ name "subsec:Efeito-do-projeto-no-modelo-dinamico"
 
 \end_inset
 
-
+;
 \end_layout
 
-\begin_layout Itemize
-Revisar os diagramas de seqüência e de comunicação considerando a plataforma
- escolhida.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Verificar a necessidade de se revisar, ampliar e adicionar novos diagramas
- de máquinas de estado e de atividades.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
 \begin_layout Subsubsection
 Efeitos do projeto nos atributos
 \begin_inset Index idx
@@ -808,25 +428,9 @@ name "subsec:Efeito-do-projeto-nos-atributos"
 
 \end_inset
 
-
+;
 \end_layout
 
-\begin_layout Itemize
-Atributos novos podem ser adicionados a uma classe, como, por exemplo, atributos
- específicos de uma determinada linguagem de softwareção (acesso a disco,
- ponteiros, constantes e informações correlacionadas).
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
 \begin_layout Subsubsection
 Efeitos do projeto nos métodos
 \begin_inset Index idx
@@ -848,90 +452,9 @@ Efeitos do projeto nos métodos
 
 \end_inset
 
-
+;
 \end_layout
 
-\begin_layout Itemize
-Em função da plataforma escolhida, verifique as possíveis alterações nos
- métodos.
- O projeto do sistema costuma afetar os métodos de acesso aos diversos dispositi
-vos (exemplo: hd, rede).
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-De maneira geral os métodos devem ser divididos em dois tipos: i) tomada
- de decisões, métodos políticos ou de controle; devem ser claros, legíveis,
- flexíveis e usam polimorfismo.
- ii) realização de processamentos, podem ser otimizados e em alguns casos
- o polimorfismo deve ser evitado.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Algoritmos complexos podem ser subdivididos.
- Verifique quais métodos podem ser otimizados.
- Pense em utilizar algoritmos prontos como os da STL (algoritmos genéricos).
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Responda a pergunta: os métodos da classes estão dando resposta às responsabilid
-ades da classe?
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Revise os diagramas de classes, de seqüência e de máquina de estado.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
 \begin_layout Subsubsection
 Efeitos do projeto nas heranças
 \begin_inset Index idx
@@ -963,71 +486,9 @@ Heranças
 
 \end_inset
 
-
+;
 \end_layout
 
-\begin_layout Itemize
-Reorganização das classes e dos métodos (criar métodos genéricos com parâmetros
- que nem sempre são necessários e englobam métodos existentes).
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Abstração do comportamento comum (duas classes podem ter uma superclasse
- em comum).
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Utilização de delegação para compartilhar a implementação (quando você cria
- uma herança irreal para reaproveitar código).
- Usar com cuidado.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Revise as heranças no diagrama de classes.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
 \begin_layout Subsubsection
 Efeitos do projeto nas associações
 \begin_inset Index idx
@@ -1049,59 +510,9 @@ Associações
 
 \end_inset
 
-
+;
 \end_layout
 
-\begin_layout Itemize
-Deve-se definir na fase de projeto como as associações serão implementadas,
- se obedecerão um determinado padrão ou não.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Se existe uma relação de "muitos", pode-se implementar a associação com
- a utilização de um dicionário, que é um mapa das associações entre objetos.
- Assim, o objeto A acessa o dicionário fornecendo uma chave (um nome para
- o objeto que deseja acessar) e o dicionário retorna um valor (um ponteiro)
- para o objeto correto.
- 
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Evite percorrer várias associações para acessar dados de classes distantes.
- Pense em adicionar associações diretas.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
 \begin_layout Subsubsection
 Efeitos do projeto nas otimizações
 \begin_inset Index idx
@@ -1113,108 +524,7 @@ otimizações
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Itemize
-Faça uma análise de aspectos relativos à otimização do sistema.
- Lembrando que a otimização deve ser desenvolvida por analistas/desenvolvedores
- experientes.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Identifique pontos a serem otimizados em que podem ser utilizados processos
- concorrentes.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Pense em incluir bibliotecas otimizadas.
-\end_layout
-
-\begin_layout Itemize
-Se o acesso a determinados objetos (atributos/métodos) requer um caminho
- longo (exemplo: A->B->C->D.atributo), pense em incluir associações extras
- (exemplo: A-D.atributo).
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Atributos auxiliares podem ser incluídos.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-A ordem de execução pode ser alterada.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Revise as associações nos diagramas de classes.
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Neste projeto blablabla
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-Depois de revisados os diagramas da análise você pode montar dois diagramas
- relacionados à infraestrutura do sistema.
- As dependências dos arquivos e bibliotecas podem ser descritos pelo diagrama
- de componentes, e as relações e dependências entre o sistema e o hardware
- podem ser ilustradas com o diagrama de implantação.
+;
 \end_layout
 
 \begin_layout Section
@@ -1249,7 +559,7 @@ O diagrama de componentes mostra a forma como os componentes do software
 \end_layout
 
 \begin_layout Standard
-Veja na Figura 
+Veja a Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "cap:Diagrama-de-componentes"
@@ -1259,17 +569,7 @@ reference "cap:Diagrama-de-componentes"
  um exemplo de diagrama de componentes.
  Observe que este inclui muitas dependências, ilustrando as relações entre
  os arquivos.
- Por exemplo: o subsistema biblioteca inclui os arquivos das classes A e
- B, e a geração dos objetos A.obj e B.obj depende dos arquivos A.h, A.cpp, B.h
- e B.cpp.
- A geração da biblioteca depende dos arquivos A.obj e B.obj.
- O subsistema biblioteca Qt, um subsistema exerno, inclui os arquivos de
- código da biblioteca Qt e a biblioteca em si.
- O subsistema banco de dados representa o banco de dados utilizado pelo
- sistema e tem uma interface de acesso que é utilizada pelo software para
- acesso aos dados armazenados no banco de dados.
- O software executável a ser gerado depende da biblioteca gerada, dos arquivos
- da biblioteca Qt, do módulo de arquivos MinhaJanela e do banco de dados.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1289,21 +589,6 @@ Observe que um assunto/pacote pode se transformar em uma biblioteca e será
 \begin_layout Itemize
 A ligação entre componentes pode incluir um estereótipo indicando o tipo
  de relacionamento ou algum protocolo utilizado.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Na versão final apagar este texto copiado do livro; e colocado aqui para
- lhe auxiliar; deixar somente o que é pertinente ao trabalho
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Neste projeto blablabla
 \end_layout
 
 \begin_layout Standard
@@ -1311,12 +596,12 @@ Neste projeto blablabla
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/fig-3-16-Diagrama-de-componentes.png
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/component diagram.png
 	lyxscale 90
 	width 100text%
 
@@ -1405,8 +690,7 @@ storage
 \end_layout
 
 \begin_layout Standard
-Pode-se utilizar uma anotação de localização para identificar onde determinado
- componente está residente, por exemplo {localização: sala 3}.
+.
 \end_layout
 
 \begin_layout Standard
@@ -1419,7 +703,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/fig-3-17-diagrama-execucao.png
+	filename C:/Users/Marcos Chaiben/Documents/GitHub/Projeto-Software-Engenharia-C-_DJM/imagens/Diagrama Implementaçção.png
 	lyxscale 90
 	width 100text%
 
@@ -1450,22 +734,6 @@ name "cap:Diagrama-de-implantação."
 \end_inset
 
 
-\end_layout
-
-\begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \end_body
