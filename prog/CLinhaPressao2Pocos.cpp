@@ -1,12 +1,13 @@
 #include "CLinhaPressao2Pocos.h"
+
 // EU INCLUO ClinhasEquipotenciais aqui também?? ja que eu uso coisas dela???????????????????
 
 double CLinhaPressao2Pocos::AreaInvadidaBT(double C){
-	return pow((4*pi*C),2)/3;
+	return pow((4.0*pi*C),2)/3.0;
 }
 
 double  CLinhaPressao2Pocos::Pressao(double q,double u,double r1,double r2,double r3 =0.0, double k,double h,double Pi){
-	return ((q*u*log(r2/r1))/(2*pi*k*h) )+ Pi;
+	return ((q*u*log(r2/r1))/(2.0*pi*k*h) )+ Pi;
 }
 
 double double CLinhaEquipotencial2Pocos::R( double C,double r1,double r2,double r3 =0.0) {
@@ -20,11 +21,11 @@ raio[0] = 2*(C)*sqrt(r)/(r-1);
 }
 
 double X0(double C, double R){
-	return C*(R+1)/(R-1);
+	return C*(R+1.)/(R-1.);
 }
 
-double CLinhasEquipotenciais::CalculoDoVetorX(double x0= 0.0 ){
-x0 = X0(C,R);
+double CLinhaEquipotencial2Pocos::CalculoDoVetorX(){
+double x0 = X0(C,R);
 vector <double> xplot = CalculodovetorX(x0) // como retorno aqui se é de outra classe ???????????????????
 	return xplot;
 }

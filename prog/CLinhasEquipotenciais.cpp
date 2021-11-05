@@ -1,19 +1,20 @@
 #include "CLinhasEquipotenciais.h"
 
-
-
-
-virtual double CLinhasEquipotenciais::AreiaInvadidaBT(double C){
+void CLinhasEquipotenciais::EntradaDados() {
+     cout << "\nEntre com distanciaPoco";
+     cin >> distanciaPoco;
+...     
 }
 
 
-virtual double CLinhasEquipotenciais::Pressao(double q,double u,double r1,double r2,double r3 =0.0, double k,double h,double Pi){
+
+double CLinhasEquipotenciais::Pressao(double q,double u,double r1,double r2,double r3 =0.0, double k,double h,double Pi){
 }
 
-virtual double CLinhasEquipotenciais::R( double C,double r1,double r2, double r3 = 0.0 ){
+double CLinhasEquipotenciais::R( double C,double r1,double r2, double r3 = 0.0 ){
 }
 
-virtual vector <double> CLinhasEquipotenciais::CalculoDoVetorRaio( double C,double r1,double r2, double r3= 0.0){
+vector <double> CLinhasEquipotenciais::CalculoDoVetorRaio( double C,double r1,double r2, double r3= 0.0){
 }
 
 double CLinhasEquipotenciais::CalculoDoVetorX1(double x0 = 0.0 ){

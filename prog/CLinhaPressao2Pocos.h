@@ -1,17 +1,18 @@
 
 #ifndef CLINHAPRESSAO2POCOS_H
 #define CLINHAPRESSAO2POCOS_H
-#include "gnuplot.h"
-#include "CLinhasEquipotenciais.h"
 #include <iostream > 
 #include <vector>
-#include <math.h>
+#include <cmath>
 #include <string>
 #include <fstream>
 #include <iostream>
 
+#include "CGnuplot.h"
+#include "CLinhasEquipotenciais.h"
+
 //DECLARO AQUI
-class CLinhaPressao2Pocos{
+class CLinhaPressao2Pocos : public CLinhasEquipotenciais {
 	
 public:
 	
