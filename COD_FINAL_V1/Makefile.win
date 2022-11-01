@@ -1,0 +1,73 @@
+# Project: bueno
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = CGnuplot.o COleoProduzido.o CPosicaoAguaInjetada.o CPosicaoAguaInjetadaStiles.o CReservatorio.o CReservatorioCamadas.o CSolverInfluxo.o main.o CPosicaoAguaInjetadaDykstra.o CLinhaPressao2Pocos.o CLinhaPressao3Pocos1P2I.o CLinhaPressao3Pocos2P1I.o CLinhasEquipotenciais.o CPoco.o CCorey.o CFluxoFracionario.o
+LINKOBJ  = CGnuplot.o COleoProduzido.o CPosicaoAguaInjetada.o CPosicaoAguaInjetadaStiles.o CReservatorio.o CReservatorioCamadas.o CSolverInfluxo.o main.o CPosicaoAguaInjetadaDykstra.o CLinhaPressao2Pocos.o CLinhaPressao3Pocos1P2I.o CLinhaPressao3Pocos2P1I.o CLinhasEquipotenciais.o CPoco.o CCorey.o CFluxoFracionario.o
+LIBS     = -L"C:/MinGW/lib" -L"C:/MinGW/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/MinGW/include" -I"C:/MinGW/x86_64-w64-mingw32/include" -I"C:/MinGW/lib/gcc/x86_64-w64-mingw32/12.2.0/include"
+CXXINCS  = -I"C:/MinGW/include" -I"C:/MinGW/x86_64-w64-mingw32/include" -I"C:/MinGW/lib/gcc/x86_64-w64-mingw32/12.2.0/include"
+BIN      = bueno.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+CGnuplot.o: CGnuplot.cpp
+	$(CPP) -c CGnuplot.cpp -o CGnuplot.o $(CXXFLAGS)
+
+COleoProduzido.o: COleoProduzido.cpp
+	$(CPP) -c COleoProduzido.cpp -o COleoProduzido.o $(CXXFLAGS)
+
+CPosicaoAguaInjetada.o: CPosicaoAguaInjetada.cpp
+	$(CPP) -c CPosicaoAguaInjetada.cpp -o CPosicaoAguaInjetada.o $(CXXFLAGS)
+
+CPosicaoAguaInjetadaStiles.o: CPosicaoAguaInjetadaStiles.cpp
+	$(CPP) -c CPosicaoAguaInjetadaStiles.cpp -o CPosicaoAguaInjetadaStiles.o $(CXXFLAGS)
+
+CReservatorio.o: CReservatorio.cpp
+	$(CPP) -c CReservatorio.cpp -o CReservatorio.o $(CXXFLAGS)
+
+CReservatorioCamadas.o: CReservatorioCamadas.cpp
+	$(CPP) -c CReservatorioCamadas.cpp -o CReservatorioCamadas.o $(CXXFLAGS)
+
+CSolverInfluxo.o: CSolverInfluxo.cpp
+	$(CPP) -c CSolverInfluxo.cpp -o CSolverInfluxo.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+CPosicaoAguaInjetadaDykstra.o: CPosicaoAguaInjetadaDykstra.cpp
+	$(CPP) -c CPosicaoAguaInjetadaDykstra.cpp -o CPosicaoAguaInjetadaDykstra.o $(CXXFLAGS)
+
+CLinhaPressao2Pocos.o: CLinhaPressao2Pocos.cpp
+	$(CPP) -c CLinhaPressao2Pocos.cpp -o CLinhaPressao2Pocos.o $(CXXFLAGS)
+
+CLinhaPressao3Pocos1P2I.o: CLinhaPressao3Pocos1P2I.cpp
+	$(CPP) -c CLinhaPressao3Pocos1P2I.cpp -o CLinhaPressao3Pocos1P2I.o $(CXXFLAGS)
+
+CLinhaPressao3Pocos2P1I.o: CLinhaPressao3Pocos2P1I.cpp
+	$(CPP) -c CLinhaPressao3Pocos2P1I.cpp -o CLinhaPressao3Pocos2P1I.o $(CXXFLAGS)
+
+CLinhasEquipotenciais.o: CLinhasEquipotenciais.cpp
+	$(CPP) -c CLinhasEquipotenciais.cpp -o CLinhasEquipotenciais.o $(CXXFLAGS)
+
+CPoco.o: CPoco.cpp
+	$(CPP) -c CPoco.cpp -o CPoco.o $(CXXFLAGS)
+
+CCorey.o: CCorey.cpp
+	$(CPP) -c CCorey.cpp -o CCorey.o $(CXXFLAGS)
+
+CFluxoFracionario.o: CFluxoFracionario.cpp
+	$(CPP) -c CFluxoFracionario.cpp -o CFluxoFracionario.o $(CXXFLAGS)
